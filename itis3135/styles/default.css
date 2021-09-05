@@ -1,0 +1,106 @@
+/* Top navigation background color*/
+.main-nav {
+    width: 100%;
+    background-color: #4B506A;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.main-nav a {
+    float: left;
+    display: block;
+    color: #FFB246;
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+    font-size: large;
+}
+
+/* Float links to the right of the navavigation menu*/
+.main-nav-right {
+    float: right;
+    font-size: large;
+}
+
+/* Change the color of links on hover */
+.main-nav a:hover {
+    background-color: #FFB246;
+    color: #369ffe;
+}
+
+/* Add an active class to highlight the current page */
+.main-nav a.active {
+    background-color: #1C2033;
+    color: #369ffe;
+}
+
+/* Body defaults */
+body {
+    font-family: Georgia, Arial, Helvetica;
+    font-size: 16px;
+    display: block;
+    margin: 0px;
+    background-color: #E8E8E8;
+    color: #5773D7;
+}
+
+h1 {
+    text-align: center;
+    color: #4B506A;
+}
+
+h2 {
+    text-align: center;
+    color: #369ffe;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+}
+.my-img {
+    width: 30%;
+    min-width: 100px;
+    max-width: 300px;
+    height: auto;
+    background-color: #f1f1f1;
+    margin: auto;
+    border-radius: 50%;
+}
+.container {
+    margin-bottom: 250px;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.my-footer-content {
+    padding: 5% 10% 15% 10%;
+    display: block;
+    position: relative;
+} 
+
+/* Fixed footer to bottom of the page */
+.sticky-footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 20%;
+    background-color: #4B506A;
+    text-align: center;
+    color: #FFB246;
+}
+/* Footer nav */
+.sticky-footer a {
+    float: center;
+    color: #FFB246;
+    text-align: center;
+    padding: auto;
+    text-decoration: none;
+    font-size: large;
+}
