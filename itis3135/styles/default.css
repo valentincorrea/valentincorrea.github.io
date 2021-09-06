@@ -44,6 +44,7 @@ body {
     color: #5773D7;
 }
 
+
 h1 {
     text-align: center;
     color: #4B506A;
@@ -97,10 +98,9 @@ figcaption {
 }
 /* Footer nav */
 .sticky-footer a {
-    float: center;
+    
     color: #FFB246;
     text-align: center;
-    padding: auto;
     text-decoration: none;
     font-size: large;
 }
