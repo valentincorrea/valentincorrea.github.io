@@ -153,5 +153,63 @@ tbody {
 .helper {
     background-color: #E8E8E8;;
 }
+/* Form page styling */
+.pricing-table {
+    background-color: #E25B4C;
+    color: whitesmoke;   
+}
 
+.price {
+    font-size: 1.7em;
+    color: #2B2944;
+}
 
+.plans-fonts {
+    font-size: 1.7em;
+    color: #E25B4C;
+    text-align: center;
+}
+
+.form-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 10%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    color: #343434;;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #CACACA;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+  
+}
+.required-fields {
+    color: red;
+}
+
+input[type=submit] {
+    width: 150px;
+    height: auto;
+    background-color: #343A40;
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 1em .5em 1em .5em;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background-color: #059862;
+    color: whitesmoke;
+
+}

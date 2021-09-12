@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Activity #3 - HTML Forms Submission</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/default.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="main-nav">
+            <a href="#">Valentin Correa</a>
+            <div class="main-nav-right">
+                <a href="https://webpages.uncc.edu/ncorream/itis3135/introduction.html">Introduction</a>
+                <a href="https://www.freecodecamp.org/valentincorrea" target="_blank">FreeCodeCamp</a>
+                <a href="https://webpages.uncc.edu/ncorream/itis3135/tables.html">Tables HTML</a>
+                <a href="https://webpages.uncc.edu/ncorream/itis3135/registration-form.html" class="active">Registration Form</a>
+                <a href="#">Contract</a>
+            </div>
+        </div>
+        <header>
+            <h1>Valentin Correa | ITIS3135</h1>
+        </header>
+        <h2>Activity #3 - HTML Forms Submission</h2>
+        <hr>
+        <br>
+        <h3 class="plans-fonts">Web Design Packages</h3>
+        <h4 class="plans-fonts">Two Simple Plans</h4>
+        <figure>
+            <figcaption>Select the design package that works best for you!</figcaption>
+            <table class="my-table">
+                <tr class="pricing-table">
+                    <th>Price</th>
+                    <th>Basic</th>
+                    <th>Pro</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td rowspan="3" class="price">$2K/mo</td>
+                    <td>Homepage</td>
+                    <td>Homepage</td>
+                </tr>
+                 <tr>
+                    <td>Contact Page</td>
+                    <td>Contact Page</td>
+                </tr>
+                <tr>
+                    <td>Services Page</td>
+                    <td>Services Page</td>
+                </tr>
+                <tr>
+                    <td rowspan="4" class="price">$4k/mo</td>
+                    <td>N/A</td>
+                    <td>Blog Page</td>
+                </tr>
+                <tr>
+                    <td>N/A</td>
+                    <td>Content Writing</td>
+                </tr>
+                <tr>
+                        <td>N/A</td>
+                        <td>Email Marketing</td>
+                </tr>
+                <tr>
+                    <td>N/A</td>
+                    <td>Integrated Social Media</td>
+                </tr>
+            </tbody>
+            </table>
+            <div class="form-container">
+                <br>
+                <h4 class="price">Need a free consultaion?</h4>
+                <h4 class="price">Get in touch</h4>
+                <p class="required-fields">Required fields *</p>
+                <form action="#">
+                    <!-- text area -->
+                    <label for="first-name">First Name <span class="required-fields">*</span></label><br>
+                    <input type="text" id="first-name" name="firstname" placeholder="First name" required><br>
+                
+                    <label for="last-name">Last Name <span class="required-fields">*</span></label><br>
+                    <input type="text" id="last-name" name="lastname" placeholder="Last name" required><br>
+
+                    <label for="customer-email">Email <span class="required-fields">*</span></label><br>
+                    <input type="email" id="customer-email" name="email" placeholder="Email@gmail.com" required><br>
+
+                    <label for="customer-telephone">Telephone</label><br>
+                    <input type="tel" id="customer-telephone" name="telephone" placeholder="Telephone"><br>
+                
+                    <label for="industry">List Of Industries</label><br>
+                    <select id="industry" name="list-of-insdustries">
+                      <option value="Select-one-option">Select One Option</option>
+                      <option value="construction">Construction</option>
+                      <option value="manufactoring">Manufacturing</option>
+                      <option value="retail">Retail</option>
+                      <option value="online-retail">Online Retail</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <br>
+                    <!-- checkbox -->
+                    <p>Select the option/options tht best describe your needs</p>
+                    <input type="checkbox" id="website1" name="website1" value="existing-website">
+                    <label for="website1"> I have a website</label><br>
+                    <input type="checkbox" id="website2" name="website2" value="non-existing-website">
+                    <label for="website1"> I don't have a website</label><br>
+                    <input type="checkbox" id="website3" name="website3" value="other">
+                    <label for="website1"> Other</label><br>
+                    <br>
+                    <!-- radio buttons -->
+                    <p>Subscribe to our Newsletter <span class="required-fields">*</span></p>
+                    <input type="radio" id="yes" name="newsletter" value="yes" required>
+                    <label for="yes">Yes!</label>
+                    <input type="radio" id="no" name="fav_language" value="no">
+                    <label for="no">No</label>
+                    <input type="radio" id="maybe-later" name="fav_language" value="maybe-later">
+                    <label for="maybe-later">Maybe Later</label><br>
+                    <br>
+                    <label for="subject">Subject</label><br>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+                
+                    <input type="submit" value="Submit" class="btn">
+                
+                  </form>
+                  <br>
+                  <br>
+            </div>
+            <hr>
+            <div class="container">
+                <p>This links validate the HTML and CSS of the Tables page only</p>
+                <p><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fncorream%2Fitis3135%2Ftables.html" target="_blank">
+                    <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+                </a></p>
+                <p>
+                    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fncorream%2Fitis3135%2Ftables.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+                        <img style="border:0;width:88px;height:31px"
+                            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                            alt="Valid CSS!" />
+                    </a>
+                </p>      
+                <br>
+                <p>The links on the footer section validates the Introduction page</p>
+                <p>
+                <br>
+                <br>
+                <br>
+            </div>
+        </figure>
+        <div class="sticky-footer">
+            <div class="my-footer-content">
+                <a href="#">Valentin Correa | </a>
+                <a href="https://webpages.uncc.edu/ncorream/itis3135/introduction.html">Introduction | </a>
+                <a href="https://webpages.uncc.edu/ncorream/itis3135/tables.html" class="active">Tables HTML | </a>
+                <a href="https://github.com/valentincorrea" target="_blank">GitHub | </a>
+                <a href="https://www.linkedin.com/in/valentincorrea/" target="_blank">LinkedIn | </a>
+                <a href="https://www.freecodecamp.org/valentincorrea" target="_blank">FreeCodeCamp | </a>
+                <a href="https://webpages.uncc.edu/ncorream/itis3135/registration-form.html">Registration Form | </a>
+                <a href="#">Contract |</a>
+                <p>Page built by Valentin Correa Studio</p>
+                <br>
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fncorream%2Fitis3135%2Fintroduction.html" target="_blank">
+                    <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalentincorrea.github.io%2Fitis3135%2Fintroduction&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                    <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+                </a>
+                <br>
+            </div>
+        </div>
+    </body>
+</html>
