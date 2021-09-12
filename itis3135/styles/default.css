@@ -50,7 +50,7 @@ h1 {
     color: #4B506A;
 }
 
-h2 {
+h2, h3 {
     text-align: center;
     color: #369ffe;
 }
@@ -78,6 +78,9 @@ figcaption {
     margin-right: 10%;
 
 }
+hr {
+    max-width: 80%;
+}
 
 .my-footer-content {
     padding: 5% 10% 15% 10%;
@@ -104,3 +107,51 @@ figcaption {
     text-decoration: none;
     font-size: large;
 }
+/* Tables */
+table {
+    border-spacing: 0px;
+    border: 2px solid #343434;
+    border-collapse:separate;
+    border-radius: 5px;
+}
+
+.my-thead {
+    background-color: #0061A8;
+    color: whitesmoke;
+}
+thead {
+    display: table-header-group;
+}
+
+th, td {
+    border: 1px solid #CACACA;
+    padding: 1em 3em 1em 2em;
+    text-align: left;
+    vertical-align: middle;
+    margin: auto;
+}
+td {
+    color: #343A40;
+}
+
+th {
+    display: table-cell;
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+  }
+
+tbody {
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+.my-table {
+   margin: auto; 
+}
+
+.helper {
+    background-color: #E8E8E8;;
+}
+
+
