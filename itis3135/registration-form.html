@@ -86,9 +86,9 @@
 
                     <label for="customer-telephone">Telephone</label><br>
                     <input type="tel" id="customer-telephone" name="telephone" placeholder="Telephone"><br>
-                
+                    <!-- Dropdown list -->
                     <label for="industry">List Of Industries</label><br>
-                    <select id="industry" name="list-of-insdustries">
+                    <select class="dropdown-list " id="industry" name="list-of-insdustries">
                       <option value="Select-one-option">Select One Option</option>
                       <option value="construction">Construction</option>
                       <option value="manufactoring">Manufacturing</option>
@@ -110,13 +110,13 @@
                     <p>Subscribe to our Newsletter</p>
                     <input type="radio" id="yes" name="newsletter" value="yes">
                     <label for="yes">Yes!</label>
-                    <input type="radio" id="no" name="fav_language" value="no">
+                    <input type="radio" id="no" name="newsletter" value="no">
                     <label for="no">No</label>
-                    <input type="radio" id="maybe-later" name="fav_language" value="maybe-later">
+                    <input type="radio" id="maybe-later" name="newsletter" value="maybe-later">
                     <label for="maybe-later">Maybe Later</label><br>
                     <br>
                     <label for="subject">Subject <span class="required-fields">*</span></label><br>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea><br>
+                    <textarea id="subject" name="subject" placeholder="Tell us something..." style="height:200px" required></textarea><br>
                 
                     <input type="submit" value="Submit" class="btn">
                 
