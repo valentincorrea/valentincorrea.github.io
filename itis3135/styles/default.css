@@ -67,6 +67,10 @@ a:link {
     color: #FFB246;
 }
 
+.a-link {
+    color: #368B85;
+}
+
 a:hover {
     color: #E25B4C;
 }

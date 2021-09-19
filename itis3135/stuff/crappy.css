@@ -1,0 +1,39 @@
+h3 {
+    font-family: "papyrus", sans-serif;
+  }
+h1 {
+    font-family: "comic", papyrus;
+  }
+h2 {
+    font-family: "times", papyrus;
+    margin-left: 73%;
+}
+
+p {
+    font-size: 72px; 
+    color: red; 
+    background-color: chartreuse; 
+    text-align: center;
+}
+ul {
+    font-size: 38px;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+}
+
+
+body {
+    overflow: scroll;
+    height: 1000px;
+    color: white;
+    display: block;
+  }
+
+  .crazy {
+    border-top: 10px dotted coral;
+    border-bottom: 10px dashed magenta;
+    border-left: 15px solid rgb(41, 16, 151);
+    border-right: 50px double gold;
+    padding-left: 20px;
+ }
