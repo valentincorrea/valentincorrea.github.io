@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="styles/brand.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Valentin Correa, ITIS 3135, Activity #5</title>
+        <!-- https://coolors.co/5a7d7c-bfdbf7-053c5e-005493-ffffff -->
+       
+    </head>
+    <body>
+           <nav class="main-nav">
+            <a href="https://webpages.uncc.edu/ncorream/itis3135/brand-vanished-chameleon.html">Vanished Chameleon</a>
+           </nav>
+        <header class="header-section">
+            <div class="my-container">
+            <h1>Vanished Chameleon Design LLC</h1>
+            <img class="my-img" src="images/chameleon-small.png" alt="Chameleon logo"><p id="greeting" class="js-message"></p>
+            <button onclick="showDate()">Show Date and Time</button>
+            <p id="date-time" class="js-message"></p>
+             </div> 
+        </header>
+        <main>
+            
+            <div class="section-one">
+                <div class="my-container">
+                    <h2>Our packages</h2>
+                    <ul>
+                        <li>#1 Home page & Contact page</li>
+                        <li>#2 Home page & Contact page + Social media integration</li>
+                        <li>#3 Home page & Contact page + Social media integration + Marketing</li>
+                    </ul>
+                    <button onclick="price()" class="section-one-btn">Check our prices</button>
+                    <p id="package-selection" class="js-message"></p>
+                    <br>
+                    <h2>Select package + your SSD storage</h2>
+                    <p>Storage size is an add-on to the package price</p>
+                    <button onclick="customPackage()" class="section-one-btn">Select Storage Size</button>
+                    <ul>
+                        <li>Option #1 5 GB </li>
+                        <li>Option #2 25 GB </li>
+                        <li>Option #3 50 GB </li>
+                        <li>Option #4 Unlimited </li>
+                    </ul>
+                    <p id="package-add-on" class="js-message"></p>
+                    <button onclick="addToCart()" class="section-one-btn">Add to Cart</button>
+                    <button onclick="emptyCart()" class="section-one-btn">Empty to Cart</button>
+                    <p id="cart" class="js-message"></p>
+                   
+
+                    
+                </div>
+            </div>
+            <div class="section-two">
+                <div class="my-container">
+                    
+                    <h4>Contact Vanished Chameleon Design today to start your journey to a better future!</h4>
+                    <br>
+                    <p>Email:<a href="mailto:info@vanishedchameleondesign.com"></a> info@vanishedchameleondesign.com</p>
+                    <p>Phone:<a href="tel:+18001234765"></a> 800-1234-765 </p>
+                    <p>Address:<a href="#"></a> 735 Mill Pond Street Bridgeport, CT 06606
+                         </p>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+            <div class="container">
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fncorream%2Fitis3135%2Fbrand-vanished-chameleon.html" target="_blank">
+                    <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fncorream%2Fitis3135%2Fbrand-vanished-chameleon.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                    <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+                </a>
+                <p>Copyright &copy; 2021 Designed by Vanished Chameleon Design LLC</p>
+            </div>
+        </footer>
+        <script src="scripts/default.js" async defer></script>
+    </body>
+
+</html>
