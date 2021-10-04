@@ -1,0 +1,193 @@
+/* REMOVE THE BASIC BROWSER STYLING*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* LOGO */
+.logo {
+  flex: 1;
+  pointer-events: none;
+  background: #ffb246;
+}
+/* Top navigation background color*/
+.main-nav {
+  display: flex;
+}
+
+.main-nav,
+ul,
+li {
+  flex: 1;
+  text-decoration: none;
+  list-style-type: none;
+}
+.main-nav {
+  width: 100%;
+  background-color: #005493;
+}
+
+.main-nav a {
+  float: left;
+  color: #f3f3f3;
+  text-align: left;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+}
+
+/* Change the color of links on hover */
+.main-nav a:hover {
+  background-color: #ffb246;
+  color: #369ffe;
+}
+
+/* Add an active class to highlight the current page */
+.main-nav a.active {
+  background-color: #1c2033;
+  color: #369ffe;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #ffffff;
+  min-width: 800px;
+  min-height: 100vh;
+}
+
+header,
+h1 {
+  margin-left: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.my-img {
+  width: 73px;
+  height: 60px;
+}
+
+.header-section {
+  width: 100%;
+  height: 450px;
+  margin-top: -24px;
+}
+
+/* NAME OF THE POLYGON DIV */
+.polygon-container {
+  background-color: #1e90ff;
+  display: flex;
+}
+
+/* NAME OF THE POLYGON FORM */
+.polygon-container,
+form {
+  margin: auto;
+  align-items: center;
+  padding: 10vh;
+}
+/* NAME OF THE POLYGON INPUT */
+.polygon-container input {
+  font-size: 1rem;
+  padding: 0.6rem;
+  text-align: left;
+  padding-left: 10px;
+  border-radius: 5px;
+  border-style: none;
+}
+/* NAME OF THE POLYGON BUTTON */
+.polygon-container button {
+  font-size: 1rem;
+  text-align: center;
+  background-color: #ffb246;
+  border-color: whitesmoke;
+  border-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.section-one {
+  background-color: #5a7d7c;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #f3f3f3;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+
+.section-two {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #053c5e;
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #053c5e;
+}
+h1 {
+  font-size: 2.4em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.2em;
+}
+
+p {
+  line-height: 1.5em;
+}
+.p-modification {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  color: whitesmoke;
+}
+ul {
+  list-style-type: square;
+}
+li {
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+footer {
+  text-align: center;
+  background-color: #005493;
+  color: #f3f3f3;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 24px;
+  font-size: 1em;
+}
+button {
+  width: auto;
+  height: auto;
+  padding: 10px 20px 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background-color: #5a7d7c;
+  color: #f3f3f3;
+}
+
+.section-one-btn {
+  width: auto;
+  height: auto;
+  padding: 10px 20px 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background-color: #005493;
+  color: #f3f3f3;
+}
+
+.js-message {
+  font-size: 1.5em;
+  text-align: left;
+  color: #005493;
+}
