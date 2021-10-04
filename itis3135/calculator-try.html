@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Valentin Correa, ITIS 3135, Activity #6 - Name the Polygon</title>
-    <meta name="description" content="ITIS 3135, Activity #6 - Name the Polygon" />
+    <title>Valentin Correa, ITIS 3135, Activity #7 - Walk Thru A Calculator Build</title>
+    <meta name="description" content="ITIS 3135, Activity #7 - Walk Thru A Calculator Build />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -16,29 +16,41 @@
         <li><a href="https://webpages.uncc.edu/ncorream/itis3135/tables.html">Tables HTML</a></li>
         <li><a href="https://webpages.uncc.edu/ncorream/itis3135/registration-form.html">Registration Form</a></li>
         <li><a href="https://webpages.uncc.edu/ncorream/itis3135/website_evaluations.html">Website Evaluations</a></li>
-        <li><a href="https://webpages.uncc.edu/ncorream/itis3135/name-the-polygon.html" class="active">Name the Polygon</a></li>
+        <li><a href="https://webpages.uncc.edu/ncorream/itis3135/name-the-polygon.html">Name the Polygon</a></li>
+        <li><a href="https://webpages.uncc.edu/ncorream/itis3135/calculator-try.html" class="active">Calculator Try</a></li>
       </ul>
     </div>
     <header>
-      <h1>Activity #6 - Name the Polygon</h1>
+      <h1>Activity #7 - Walk Thru A Calculator Build</h1>
     </header>
-    <div class="polygon-container">
-      <form>
-        <p class="p-modification">Please enter a number on the text field</p>
-        <input type="text" class="user-data" />
-        <button class="enter-button" type="submit">Enter a number</button>
-      </form>
-    </div>
-    <div class="polygon-container">
-      <div class="my-container">
-        <h4>Contact Vanished Chameleon Design today to start your journey to a better future!</h4>
-        <br />
-        <p>
-          Email:<a href="mailto:info@vanishedchameleondesign.com"></a>
-          info@vanishedchameleondesign.com
-        </p>
-        <p>Phone:<a href="tel:+18001234765"></a> 800-1234-765</p>
-        <p>Address:<a href="#"></a> 735 Mill Pond Street Bridgeport, CT 06606</p>
+    <div class="calculator">
+      <input type="text" class="calculator-window" />
+      <div class="calculator-grid">
+        <!-- First row -->
+        <button class="reset" type="button" value="ac">AC</button>
+        <button class="negative" type="button" value="pos-neg">+/-</button>
+        <button class="percent" type="button" value="%">%</button>
+        <button class="division" type="button" value="/">/</button>
+        <!-- Second row -->
+        <button type="button" value="7">7</button>
+        <button type="button" value="8">8</button>
+        <button type="button" value="9">9</button>
+        <button class="multiplication" type="button" value="*">*</button>
+        <!-- Third row -->
+        <button type="button" value="4">4</button>
+        <button type="button" value="5">5</button>
+        <button type="button" value="6">6</button>
+        <button class="subtraction" type="button" value="=-">-</button>
+        <!-- fourt row -->
+        <button type="button" value="1">1</button>
+        <button type="button" value="2">2</button>
+        <button type="button" value="2">2</button>
+        <button class="addition" type="button" value="+">+</button>
+        <!-- fourt row -->
+        <button type="button" value=""></button>
+        <button type="button" value="0">0</button>
+        <button type="button" value=".">.</button>
+        <button class="equal" type="button" value="=">=</button>
       </div>
     </div>
 
@@ -57,11 +69,12 @@
         <a href="https://www.linkedin.com/in/valentincorrea/" target="_blank">LinkedIn | </a>
         <a href="https://www.freecodecamp.org/valentincorrea" target="_blank">FreeCodeCamp |</a>
         <a href="https://webpages.uncc.edu/ncorream/itis3135/registration-form.html">Registration Form | </a>
-        <a href="https://webpages.uncc.edu/ncorream/itis3135/name-the-polygon.html" class="active">Name the Polygon |</a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/name-the-polygon.html">Name the Polygon |</a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/calculator-try.html">Calculator Try</a>
 
         <p>Copyright &copy; 2021 Designed by Vanished Chameleon Design LLC</p>
       </div>
     </footer>
-    <script src="scripts/polygon.js"></script>
+    <script src="scripts/calculator-try.js"></script>
   </body>
 </html>
