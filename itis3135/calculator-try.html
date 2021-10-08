@@ -24,33 +24,34 @@
       <h1>Activity #7 - Walk Thru A Calculator Build</h1>
     </header>
     <div class="calculator">
-      <input type="text" class="calculator-window" />
-      <div class="calculator-grid">
+      <div class="calculator-window">0</div>
+      <!-- <input type="text" class="calculator-window" value="0" /> -->
+      <div class="calculator-buttons">
         <!-- First row -->
-        <button class="reset" type="button" value="ac">AC</button>
-        <button class="negative" type="button" value="pos-neg">+/-</button>
-        <button class="percent" type="button" value="%">%</button>
-        <button class="division" type="button" value="/">/</button>
+        <button class="operators" data-action="clear" type="button" value="ac">AC</button>
+        <button class="operators" data-action="pos-neg" type="button" value="pos-neg">+/-</button>
+        <button class="operators" data-action="percentage" type="button" value="%">%</button>
+        <button class="operators" data-action="division" type="button" value="/">/</button>
         <!-- Second row -->
         <button type="button" value="7">7</button>
         <button type="button" value="8">8</button>
         <button type="button" value="9">9</button>
-        <button class="multiplication" type="button" value="*">*</button>
+        <button class="operator" data-action="multiplication" type="button" value="*">*</button>
         <!-- Third row -->
         <button type="button" value="4">4</button>
         <button type="button" value="5">5</button>
         <button type="button" value="6">6</button>
-        <button class="subtraction" type="button" value="=-">-</button>
+        <button class="operator" data-action="subtraction" type="button" value="-">-</button>
         <!-- fourt row -->
         <button type="button" value="1">1</button>
         <button type="button" value="2">2</button>
         <button type="button" value="2">2</button>
-        <button class="addition" type="button" value="+">+</button>
+        <button class="operator" data-action="addition" type="button" value="+">+</button>
         <!-- fourt row -->
         <button type="button" value=""></button>
         <button type="button" value="0">0</button>
-        <button type="button" value=".">.</button>
-        <button class="equal" type="button" value="=">=</button>
+        <button class="operator" data-action="decimal" type="button" value=".">.</button>
+        <button class="operator" data-action="calculate" type="button" value="=">=</button>
       </div>
     </div>
 
