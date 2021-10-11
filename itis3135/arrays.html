@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="styles/default.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentin Correa, ITIS 3135, Arrays</title>
+  </head>
+  <body>
+    <div class="main-nav">
+      <a href="#">Valentin Correa</a>
+      <div class="main-nav-right">
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/introduction.html">Introduction</a>
+        <a href="https://www.freecodecamp.org/valentincorrea" target="_blank">FreeCodeCamp</a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/tables.html">Tables HTML</a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/registration-form.html">Registration Form</a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/website_evaluations.html">Website Evaluations</a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/name-the-polygon.html">Name the Polygon</a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/calculator-try.html">Calculator</a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/arrays.html" class="active">Arrays</a>
+        <a href="#">Contract</a>
+      </div>
+    </div>
+
+    <header>
+      <h1>Valentin Correa | ITIS3135</h1>
+    </header>
+    <h2>Arrays</h2>
+    <div class="div-section-one">
+      <label for="employees">Select the employee username</label>
+      <select name="employees" id="employee-list">
+        <option value="Select User" selected>Select User</option>
+        <option value="asmith">asmith</option>
+        <option value="wbrown">wbrown</option>
+        <option value="lgarcia">lgarcia</option>
+        <option value="wtaylor">wtaylor</option>
+        <option value="pmoore">pmoore</option>
+        <option value="egreen">egreen</option>
+      </select>
+      <button type="button" value="add-salary" onclick="addSalary()">Add Salary</button>
+      <button type="button" class="showResults" value="display-results">Display Results</button>
+      <button type="button" class="showSalary" value="display-salary" onclick="displaySalary()">Display Salary</button>
+    </div>
+
+    <dir id="div-container"></dir>
+
+    <div class="sticky-footer">
+      <div class="my-footer-content">
+        <a href="#">Valentin Correa | </a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/introduction.html" class="active">Introduction | </a>
+        <a href="https://github.com/valentincorrea" target="_blank">GitHub | </a>
+        <a href="https://www.linkedin.com/in/valentincorrea/" target="_blank">LinkedIn | </a>
+        <a href="https://www.freecodecamp.org/valentincorrea" target="_blank">FreeCodeCamp |</a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/registration-form.html">Registration Form | </a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/name-the-polygon.html">Name the Polygon |</a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/calculator-try.html">Calculator |</a>
+        <a href="https://webpages.uncc.edu/ncorream/itis3135/arrays.html">Arrays |</a>
+        <a href="#">Contract |</a>
+        <p>Page built by Valentin Correa Studio</p>
+        <br />
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fncorream%2Fitis3135%2Fintroduction.html" target="_blank">
+          <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator" />
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalentincorrea.github.io%2Fitis3135%2Fintroduction&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+          <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator" />
+        </a>
+        <br />
+      </div>
+    </div>
+    <script src="scripts/arrays.js"></script>
+  </body>
+</html>

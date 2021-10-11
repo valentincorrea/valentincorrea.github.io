@@ -255,3 +255,24 @@ section {
   margin-left: 10%;
   margin-right: 10%;
 }
+
+/* div-style  FROM JS */
+#div-cintainer {
+  display: inline-block;
+}
+.div-section-one {
+  width: auto;
+  height: auto;
+  display: flexbox;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 1em 1em 1em 1em;
+  padding: 1em 2em 1em 2em;
+}
+.div-style {
+  width: auto;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 5%;
+  margin-right: 10%;
+  padding: 1em 2em 1em 2em;
+}
