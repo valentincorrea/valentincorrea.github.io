@@ -8,6 +8,8 @@ const divContainerTable = document.getElementById("results_table");
 const person = [];
 const salaries = [];
 
+let headers = ["Username", "Salary"];
+
 // EVENTS LISTENER
 addResults.addEventListener("click", displayResults);
 printSalary.addEventListener("click", displaySalary);
@@ -49,30 +51,16 @@ function displayResults() {
 }
 
 function displaySalary() {
-  const addTable = document.createElement("TABLE");
-  addTable.classList.add("div-style");
-  divContainerTable.appendChild(addTable);
-  console.log("Hello World");
-  alert("hi");
+  const table = document.createElement("TABLE");
+  const headerRow = document.createElement("tr");
+  // CREATING THE HEADERS
+  headers.forEach((headerText) => {
+    const header = document.createElement("th");
+    const textNode = document.createTextNode(headerText);
+    header.appendChild(textNode);
+    headerRow.appendChild(header);
+  });
+  // APPENTD THE HEADERROW
+  table.appendChild(headerRow);
+  divContainerTable.appendChild(table);
 }
-
-//   let headerRow = document.createElement("th");
-//   headers.forEach((headerText) => {
-//     let header = document.createElement("th");
-//     let addHeader = document.createTextNode(headerText);
-//     header.appendChild(addHeader);
-//     headerRow.appendChild(header);
-//   });
-//   addTable.appendChild(headerRow);
-//   person.forEach((employee) => {
-//     let row = document.createElement("tr");
-//     Object.value(employee).forEach((text) => {
-//       let cell = document.createElement("td");
-//       let cellContent = document.createTextNode(text);
-//       cell.appendChild(cellContent);
-//       row.appendChild(cell);
-//     });
-//     addTable.appendChild(row);
-//   });
-//   .appendChild(addTable);
-// }
