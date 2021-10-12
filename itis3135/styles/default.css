@@ -257,7 +257,10 @@ section {
 }
 
 /* div-style  FROM JS */
-#div-cintainer {
+#div-container {
+  display: inline-block;
+}
+#div-container-table {
   display: inline-block;
 }
 .div-section-one {
