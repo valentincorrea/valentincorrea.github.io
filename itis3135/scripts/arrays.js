@@ -8,6 +8,8 @@ const divContainerTable = document.getElementById("results_table");
 const person = [];
 const salaries = [];
 
+const employees = [{ person }, { salaries }];
+
 let headers = ["Username", "Salary"];
 
 // EVENTS LISTENER
@@ -62,5 +64,17 @@ function displaySalary() {
   });
   // APPENTD THE HEADERROW
   table.appendChild(headerRow);
+  // CREATE ROWS
+  employees.forEach((emp) => {
+    const row = document.createElement("tr");
+    Object.values(emp).forEach((text) => {
+      const cell = document.createElement("td");
+      const textNode = document.createTextNode(text);
+      cell.appendChild(textNode);
+      row.appendChild(cell);
+    });
+    table.appendChild(row);
+  });
+
   divContainerTable.appendChild(table);
 }
