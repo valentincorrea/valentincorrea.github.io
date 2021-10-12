@@ -25,9 +25,9 @@ function addSalary() {
   var userSalary = prompt("Enter the salary for " + userName + ":");
   person.push(userName);
   salaries.push(parseFloat(userSalary));
-  console.log(person);
-  console.log(salaries);
-  console.log("The username " + person + "salary is: " + userSalary);
+  // console.log(person);
+  // console.log(salaries);
+  // console.log("The username " + person + "salary is: " + userSalary);
 }
 
 function displayResults() {

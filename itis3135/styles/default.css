@@ -268,8 +268,22 @@ section {
   height: auto;
   display: flexbox;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin: 1em 1em 1em 1em;
+  margin-left: 5%;
+  margin-right: 5%;
   padding: 1em 2em 1em 2em;
+  border-radius: 5px;
+}
+.table-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  padding: 1em 2em 1em 2em;
+  border-radius: 5px;
 }
 .div-style {
   width: auto;
@@ -278,4 +292,14 @@ section {
   margin-left: 5%;
   margin-right: 10%;
   padding: 1em 2em 1em 2em;
+  border-radius: 5px;
+}
+
+button {
+  width: auto;
+  height: auto;
+  margin: 1rem;
+  padding: 1.1rem;
+  box-shadow: rgba(75, 73, 73, 0.35) 0px 5px 15px;
+  cursor: pointer;
 }
