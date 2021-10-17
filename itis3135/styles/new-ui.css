@@ -1,0 +1,205 @@
+:root {
+  --primary-color: #3c40a4;
+  --secondary-color: #4c68f0;
+  --primary-color-hover: #7fefdf;
+  --body-color: #ffffff;
+  --dark-text-color: #040109;
+  --text-color: #5c5c5c;
+  --light-text: #e8e8e8;
+  --card-color-light: #8596fe;
+
+  /*   border radius */
+  --radius: 0.2rem;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: Georgia, Arial, Helvetica;
+  background: var(--body-color);
+  min-width: 800px;
+  height: 100vh;
+}
+
+/* ----------------NAVIGATION BAR---------------- */
+
+.nav-list {
+  background: var(--primary-color);
+  box-shadow: 0px 0px 5px var(--dark-blue-200);
+  height: auto;
+  margin: 0px;
+  padding: 1rem 0;
+  border-radius: var(--radious);
+  display: flex;
+  /* Push the content to the left of the screen */
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* Remove the bullet points and adding space between links */
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+/* Styling the navigation links */
+.nav-item a {
+  text-decoration: none;
+  color: var(--body-color);
+  transition: all 200ms ease-in;
+}
+
+/* Hover nav item */
+.nav-item a:hover {
+  color: var(--primary-color-hover);
+}
+
+/* Push the logo/title to the left of the nav  (Nav first child)*/
+.nav-item:first-child {
+  /* pushes the logo to the left */
+  margin-right: auto;
+  /* pushes the logo to the right 2 rem */
+  margin-left: 2rem;
+}
+
+/* Styling the primary button */
+.btn-primary {
+  font-family: Georgia, Arial, Helvetica;
+  font-size: 1rem;
+  background: var(--body-color);
+  border: none;
+  outline: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+/* Button hover  */
+.btn-primary:hover {
+  background: var(--primary-color-hover);
+}
+
+/* --------------- END OF THE NAVIGATION BAR ----------------- */
+
+/* --------------- MAIN ----------------- */
+main {
+  margin: 5vh 10vh 5vh 10vh;
+}
+
+h1 {
+  color: var(--secondary-color);
+}
+h2,
+h3 {
+  color: var(--header-text-color);
+}
+
+p {
+  color: var(--body-color);
+  font-size: 16px;
+  line-height: 1.5em;
+}
+ul {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+li {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 1.5em;
+}
+
+/* ---------------CENTER DIV----------------- */
+.center-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ----------------PORTRAIT CLASS---------------- */
+.portrait {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 100px;
+  max-width: 300px;
+  background-color: #f1f1f1;
+  margin: auto;
+  border-radius: 50%;
+}
+/* -------------FIG CAPTURE TEXT------------------- */
+
+.figure-caption-center {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin-top: 20px;
+}
+
+/* -------------FOOTER----------------- */
+footer {
+  background: var(--primary-color);
+  padding: 3rem 2rem 3rem 2rem;
+  height: auto;
+}
+footer ul {
+  background: var(--darker-blue-200);
+  box-shadow: 0px 0px 5px var(--dark-blue-200);
+  height: auto;
+  margin: 0px;
+  padding: 1rem 0;
+  border-radius: var(--radious);
+  display: flex;
+  /* Push the content to the left of the screen */
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--body-color);
+  transition: all 200ms ease-in;
+}
+footer a:hover {
+  color: var(--accent-color);
+}
+
+/* ---------------END FOOTER----------------- */
+
+/* ---------------CARD DIV----------------- */
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: var(--card-color-light);
+  margin: 4rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: var(--radius);
+}
+
+.card p {
+  font-size: 1.2rem;
+}
+
+.card h3 {
+  font-size: 2rem;
+}
+
+.card li {
+  font-size: 1.2rem;
+  color: var(--body-color);
+}
+
+/* ---------------END FOOTER----------------- */
