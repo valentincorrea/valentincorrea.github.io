@@ -1,0 +1,155 @@
+/* background image */
+html {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/Candle-Background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* top heading */
+header,
+h2 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  padding-top: 20px;
+}
+
+/* font size */
+body {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* table format*/
+td,
+th {
+  border: 1px solid black;
+
+  padding: 8px;
+  background-color: #262626;
+  color: powderblue;
+  text-align: left;
+}
+
+th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  background-color: #262626;
+
+  color: whitesmoke;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* form */
+form {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  color: black;
+}
+
+/* SIMPLE NAV */
+nav {
+  background-color: #262626;
+  height: auto;
+  text-align: left;
+  padding: 1rem 0 1rem 2rem;
+}
+nav a {
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* footer bottom of page*/
+footer {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  background-color: #262626;
+  margin-top: 50px;
+  padding: 50px 0 50px 0;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+/* whitespace */
+.whitespace {
+  margin-top: 1rem;
+  padding: 10px;
+}
+
+.whitespace2 {
+  padding: 60px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+table img {
+  width: 150px;
+  height: 100px;
+}
+
+/* REQUIRED FIElD IDENTIFIER */
+.required-fields {
+  color: red;
+}
+
+/* FORM CONTAINER */
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 20% 40px 20%;
+  padding: 5% 0 5% 0;
+  background-color: whitesmoke;
+}
+
+/* FORM INPUT AND BUTTONS */
+.form-container input,
+label {
+  display: flex;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.form-container button {
+  display: flex;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  background-color: #525252;
+  color: #ffffff;
+  border-radius: 5px;
+}
