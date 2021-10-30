@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: Georgia, Arial, Helvetica;
+  background: #020202;
+  height: 100vh;
+}
+h1,
+h2 {
+  color: #040109;
+  font-family: "Zen Antique", serif;
+  color: whitesmoke;
+}
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  color: whitesmoke;
+}
+
+.nav-list {
+  background: #020202;
+  box-shadow: 0px 0px 5px var(--dark-blue-200);
+  height: auto;
+  margin: 0px;
+  padding: 1rem 0;
+  border-radius: var(--radious);
+  display: flex;
+  /* Push the content to the left of the screen */
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* Remove the bullet points and adding space between links */
+.nav-item {
+  list-style: none;
+  margin-right: 1.5rem;
+  padding: 2rem 0;
+}
+
+/* Styling the navigation links */
+.nav-item a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  transition: all 200ms ease-in;
+}
+
+/* Hover nav item */
+.nav-item a:hover {
+  color: #0073b1;
+}
+
+/* Push the logo/title to the left of the nav  (Nav first child)*/
+.nav-item:first-child {
+  /* pushes the logo to the left */
+  margin-right: auto;
+  /* pushes the logo to the right 2 rem */
+  margin-left: 2rem;
+}
+
+button {
+  font-size: 1.2rem;
+  font-family: "Zen Antique", serif;
+  background-color: #020202;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 2px;
+  padding: 0.5rem 1.5rem;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: black;
+  transition: all 200ms ease-in;
+}
+
+.fab {
+  font-size: 36px;
+}
+
+.fab:hover {
+  color: #0073b1;
+}
+/* PORTRAIT */
+.portrait {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-width: 100px;
+  background-color: #f1f1f1;
+  margin: auto;
+}
+
+.section {
+  width: 80%;
+  margin-left: 9%;
+}
+.section-p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Zen Antique", serif;
+}
+
+.center-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* FLEX CONTAINER */
+.container {
+  height: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
+
+.box {
+  width: 40%;
+  height: auto;
+  display: flex;
+}
+
+/* -------------FOOTER----------------- */
+footer {
+  background: #020202;
+  padding: 3rem 2rem 3rem 2rem;
+  height: auto;
+}
+
+footer ul {
+  height: auto;
+  margin: 0px;
+  padding: 1rem 0;
+  display: flex;
+  /* Push the content to the left of the screen */
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer li {
+  list-style: none;
+  color: whitesmoke;
+  margin-right: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  transition: all 200ms ease-in;
+}
+footer a:hover {
+  color: #0073b1;
+}
+
+/* ADDING REPONSIVE MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 100px) {
+  .box {
+    width: 40%;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .box {
+    width: 90%;
+    display: flex;
+  }
+  .center-div {
+    width: 90%;
+    text-align: left;
+    margin-left: auto;
+  }
+}
