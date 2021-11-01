@@ -41,6 +41,29 @@ button {
   text-align: center;
   cursor: pointer;
 }
+
+.fake-button,
+.form-button {
+  font-family: Helvetica, sans-serif, serif;
+  font-size: 1rem;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: #333333;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.fake-button:hover,
+.form-button:hover {
+  background-color: #ea3c53;
+  color: white;
+  border: 1px solid #ea3c53;
+  transition: all 200ms ease-in;
+}
+
 button:hover {
   background-color: #ea3c53;
   color: white;
