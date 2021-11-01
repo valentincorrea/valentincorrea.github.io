@@ -375,4 +375,14 @@ footer a:hover {
   .social-icons {
     width: 60%;
   }
+  .columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5% 0;
+  }
+  .column {
+    flex: 60%%;
+  }
 }
