@@ -346,7 +346,7 @@ footer a:hover {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 1000px) {
   .box {
     width: 40%;
     display: flex;
@@ -362,5 +362,17 @@ footer a:hover {
     width: 90%;
     text-align: left;
     margin-left: auto;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .social-icons {
+    width: 60%;
   }
 }
