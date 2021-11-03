@@ -17,6 +17,7 @@
       <div class="hero-text">
         <h1>Valentin Correa</h1>
         <h2>I'm passionate about technology</h2>
+        <p style="color: whitesmoke">Photo by Ales Nesetril on Unsplash</p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/valentincorrea/" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/valentincorrea" target="_blank"><i class="fab fa-github-square"></i></a>
@@ -30,6 +31,7 @@
         </header>
         <h2 class="accent">Contact</h2>
       </div>
+      <div id="information-box"></div>
       <div class="card">
         <div class="section">
           <h2>Get in touch</h2>
@@ -46,19 +48,19 @@
         <form action="#">
           <label for="first-name">First Name<span class="required-fields">*</span></label>
           <br />
-          <input type="text" id="first-name" name="firstName" placeholder="First Name" />
+          <input type="text" id="first-name" name="firstName" placeholder="First Name" required />
           <br />
           <label for="last-name">Last Name<span class="required-fields">*</span></label>
           <br />
-          <input type="text" id="last-name" name="lastName" placeholder="Last Name" />
+          <input type="text" id="last-name" name="lastName" placeholder="Last Name" required />
           <br />
           <label for="telephone">Last Name<span class="required-fields">*</span></label>
           <br />
-          <input type="tel" id="telephone" name="phone" placeholder="xxx-xxx-xxxx" />
+          <input type="tel" id="telephone" name="phone" placeholder="xxx-xxx-xxxx" required />
           <br />
           <label for="email">Email<span class="required-fields">*</span></label>
           <br />
-          <input type="email" id="email" name="email" placeholder="example@gmail.com" />
+          <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
           <br />
           <button type="button" class="form-button" value="submit-form" onclick="displayUserInformation()">Submit</button>
         </form>
@@ -70,7 +72,6 @@
           >
         </div>
       </div>
-      <div id="information-box"></div>
     </main>
     <footer>
       <div id="my-footer"></div>

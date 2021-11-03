@@ -6,9 +6,11 @@ html {
   background: #ffffff;
 }
 
+/* HERO SECTION */
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/macbook-pro.jpg");
-  height: 60%;
+  /* https://unsplash.com/photos/Im7lZjxeLhg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
+  height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +31,8 @@ html {
   color: white;
 }
 
-button {
+/* I REMOVED THE HERO BUTTON TO REDUCE REDUNDANT  ELEMENTS */
+/* .hero-text button {
   font-family: Helvetica, sans-serif, serif;
   font-size: 1rem;
   border: none;
@@ -40,83 +43,63 @@ button {
   background-color: white;
   text-align: center;
   cursor: pointer;
+} */
+
+/* .hero-text button:hover {
+  background-color: #ea3c53;
+  color: white;
+  border: 1px solid #ea3c53;
+  transition: all 200ms ease-in;
+} */
+
+/* END OF THE HERO SECTION */
+
+/* NAV SECTION */
+.nav-list {
+  background: #020202;
+  height: auto;
+  margin: 0px;
+  padding: 1rem 0;
+  display: flex;
+  /* THIS SECTION PUSHES THE THE FIRST ITEM ON THE NAV TO THE LEFT OF THE SCREEN */
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.fake-button,
-.form-button {
+/* REMOVES THE BULLET POINTS AND ADDS SPACE BETWEEN LINKS */
+.nav-item {
+  list-style: none;
+  margin-right: 1.5rem;
+  padding: 2rem 0;
+}
+
+/* STYLING THE NAV LINKS */
+.nav-item a {
   font-family: Helvetica, sans-serif, serif;
-  font-size: 1rem;
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: white;
-  background-color: #333333;
-  text-align: center;
-  cursor: pointer;
   text-decoration: none;
-}
-.fake-button:hover,
-.form-button:hover {
-  background-color: #ea3c53;
-  color: white;
-  border: 1px solid #ea3c53;
-  transition: all 200ms ease-in;
-}
-
-button:hover {
-  background-color: #ea3c53;
-  color: white;
-  border: 1px solid #ea3c53;
-  transition: all 200ms ease-in;
-}
-
-/* SUBMIT BUTTON */
-input[type="submit"] {
-  font-family: Helvetica, sans-serif, serif;
+  color: whitesmoke;
   font-size: 1rem;
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 1rem 2rem;
-  width: 20%;
-  color: white;
-  background-color: #0f0f0f;
-  text-align: center;
-  cursor: pointer;
-}
-.submit-btn:hover {
-  background-color: #ea3c53;
-  color: white;
-  border: 1px solid #ea3c53;
   transition: all 200ms ease-in;
 }
 
-.hero-text button {
-  font-family: Helvetica, sans-serif, serif;
-  font-size: 1rem;
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: white;
-  text-align: center;
-  cursor: pointer;
+/* HOVER EFFECT*/
+.nav-item a:hover {
+  color: #ea3c53;
 }
 
-.hero-text button:hover {
-  background-color: #ea3c53;
-  color: white;
-  border: 1px solid #ea3c53;
-  transition: all 200ms ease-in;
+/* PUSHES THE LOG TO THE RIGHT OF THE NAV (NAV FIRST CHILD) */
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
 }
+
+/* END OF NAV SECTION */
 
 h1,
 h2 {
   color: #333333;
-  /* font-family: "Zen Antique", serif; */
-  font-family: Helvetica, sans-serif, serif;
+  font-family: "Zen Antique", serif;
 }
 
 h1 {
@@ -134,50 +117,65 @@ p {
   color: #333333;
 }
 
+/* THIS CLASS ADDS THE RECOLOR TO TEXT */
 .accent {
   color: #ea3c53;
 }
 
-.nav-list {
-  background: #020202;
-  height: auto;
-  margin: 0px;
-  padding: 1rem 0;
-  display: flex;
-  /* Push the content to the left of the screen */
-  justify-content: flex-end;
-  flex-wrap: wrap;
+/* LOGO */
+#logo img {
+  height: 60px;
+  width: 60px;
   align-items: center;
 }
-/* Remove the bullet points and adding space between links */
-.nav-item {
-  list-style: none;
-  margin-right: 1.5rem;
-  padding: 2rem 0;
+
+/* TRANSFORMING LINKS TO BUTTONS */
+.fake-button,
+.form-button {
+  font-size: 1rem;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: #333333;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-/* Styling the navigation links */
-.nav-item a {
-  font-family: Helvetica, sans-serif, serif;
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 1rem;
+.fake-button:hover,
+.form-button:hover {
+  background-color: #ea3c53;
+  color: white;
+  border: 1px solid #ea3c53;
   transition: all 200ms ease-in;
 }
 
-/* Hover nav item */
-.nav-item a:hover {
-  color: #ea3c53;
+/*TARGETTING THE SUBMIT BUTTON BY TYPE*/
+input[type="submit"] {
+  font-family: Helvetica, sans-serif, serif;
+  font-size: 1rem;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 20%;
+  color: white;
+  background-color: #0f0f0f;
+  text-align: center;
+  cursor: pointer;
 }
 
-/* Push the logo/title to the left of the nav  (Nav first child)*/
-.nav-item:first-child {
-  /* pushes the logo to the left */
-  margin-right: auto;
-  /* pushes the logo to the right 2 rem */
-  margin-left: 2rem;
+input[type="submit"]:hover {
+  background-color: #ea3c53;
+  color: white;
+  border: 1px solid #ea3c53;
+  transition: all 200ms ease-in;
 }
 
+/* FONT AWESOME ICONS */
 .fab {
   font-size: 36px;
   color: #ffffff;
@@ -186,6 +184,17 @@ p {
 .fab:hover {
   color: #ea3c53;
 }
+
+/* KEEPS THE SOCIAL ICONS CENTERED */
+.social-icons {
+  width: 20%;
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4% 2%;
+}
+
 /* PORTRAIT */
 .portrait {
   display: flex;
@@ -213,15 +222,6 @@ p {
   flex-direction: column;
 }
 
-.social-icons {
-  width: 20%;
-  margin: 5% auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 4% 2%;
-}
-
 /* FLEX CONTAINER */
 .container {
   height: auto;
@@ -239,7 +239,7 @@ p {
   display: flex;
 }
 
-/* ---------------CARD DIV----------------- */
+/* CARD DIV */
 .card {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 10%;
@@ -257,8 +257,8 @@ p {
 
 .card li {
   font-size: 1.2rem;
-  color: var(--body-color);
 }
+/* CARD DIV END */
 
 input,
 label {
@@ -301,8 +301,9 @@ input {
   line-height: 2rem;
   font-size: 1.2rem;
 }
+/* THREE COLUMNS LAYOUT END */
 
-/* -------------FOOTER----------------- */
+/* FOOTER */
 footer {
   background: #f3f3f3;
   padding: 2rem 2rem 2rem 2rem;
@@ -336,6 +337,7 @@ footer a {
 footer a:hover {
   color: #ea3c53;
 }
+/* FOOTER  END */
 
 /* ADDING REPONSIVE MEDIA QUERIES */
 
@@ -383,6 +385,6 @@ footer a:hover {
     padding: 5% 0;
   }
   .column {
-    flex: 60%%;
+    flex: 60%;
   }
 }

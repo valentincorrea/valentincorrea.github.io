@@ -1,8 +1,11 @@
+// THIS FUNCTION TAKES THE USER'S INFORMATION AND
+// DISPLAYS THE INFORMATION ON TOP OF THE CONTACT FORM
 function displayUserInformation() {
   const firstName = document.getElementById("first-name").value;
   const lastName = document.getElementById("last-name").value;
   const telephoneNumber = document.getElementById("telephone").value;
   const emailAddress = document.getElementById("email").value;
+
   if (!firstName || !lastName || !telephoneNumber || !emailAddress) {
     alert("You forgot to fill all the boxes");
     return;
