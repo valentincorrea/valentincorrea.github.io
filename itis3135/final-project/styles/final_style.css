@@ -1,0 +1,375 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Zen Antique", serif;
+  background: #ffffff;
+}
+
+/* HERO SECTION */
+.hero-section {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/macbook-pro.jpg"); */
+  /* https://unsplash.com/photos/Im7lZjxeLhg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink */
+  /* background: rgb(1, 52, 134); */
+  /* background: linear-gradient(135deg, rgba(1, 52, 134, 1) 0%, rgba(4, 81, 146, 1) 45%, rgba(9, 128, 166, 1) 100%); */
+  background: rgb(1, 18, 45);
+  background: linear-gradient(135deg, rgba(1, 18, 45, 1) 0%, rgba(4, 81, 146, 1) 45%, rgba(9, 128, 166, 1) 100%);
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h1,
+.hero-text h2 {
+  color: white;
+}
+
+/* NAV SECTION */
+.nav-list {
+  height: auto;
+  margin: 0px;
+
+  display: flex;
+  /* THIS SECTION PUSHES THE THE FIRST ITEM ON THE NAV TO THE LEFT OF THE SCREEN */
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* REMOVES THE BULLET POINTS AND ADDS SPACE BETWEEN LINKS */
+.nav-item {
+  list-style: none;
+  margin-right: 1.5rem;
+  padding: 2rem 0;
+}
+
+/* STYLING THE NAV LINKS */
+.nav-item a {
+  font-family: Helvetica, sans-serif, serif;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1rem;
+  transition: all 200ms ease-in;
+}
+
+/* HOVER EFFECT*/
+.nav-item a:hover {
+  color: #ea3c53;
+}
+
+/* PUSHES THE LOG TO THE RIGHT OF THE NAV (NAV FIRST CHILD) */
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+
+/* END OF NAV SECTION */
+
+h1,
+h2 {
+  color: #333333;
+  font-family: "Zen Antique", serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: #333333;
+}
+
+/* THIS CLASS ADDS THE RECOLOR TO TEXT */
+.accent {
+  color: #ea3c53;
+}
+
+/* LOGO */
+.nav-item .logo {
+  height: 40px;
+  width: auto;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+/* TRANSFORMING LINKS TO BUTTONS */
+.fake-button,
+.form-button {
+  font-size: 1rem;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background-color: #333333;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.fake-button:hover,
+.form-button:hover {
+  background-color: #ea3c53;
+  color: white;
+  border: 1px solid #ea3c53;
+  transition: all 200ms ease-in;
+}
+
+/*TARGETTING THE SUBMIT BUTTON BY TYPE*/
+input[type="submit"] {
+  font-family: Helvetica, sans-serif, serif;
+  font-size: 1rem;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 20%;
+  color: white;
+  background-color: #0f0f0f;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ea3c53;
+  color: white;
+  border: 1px solid #ea3c53;
+  transition: all 200ms ease-in;
+}
+
+/* FONT AWESOME ICONS */
+.fab {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.fab:hover {
+  color: #ea3c53;
+}
+
+/* KEEPS THE SOCIAL ICONS CENTERED */
+.social-icons {
+  width: 20%;
+  margin: 5% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4% 2%;
+}
+
+/* PORTRAIT */
+.portrait {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-width: 100px;
+  background-color: #f1f1f1;
+  margin: auto;
+}
+
+.section {
+  width: 80%;
+  max-width: 1200px;
+  margin-left: 9%;
+}
+.section-p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Zen Antique", serif;
+}
+
+.center-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* FLEX CONTAINER */
+/* .container {
+  height: auto;
+  width: 90%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+} */
+
+.box {
+  width: 40%;
+  height: auto;
+  display: flex;
+}
+
+/* CARD DIV */
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10%;
+  padding: 5% 2% 5% 2%;
+  border-radius: 5px;
+}
+
+.card p {
+  font-size: 1.2rem;
+}
+
+.card h3 {
+  font-size: 2rem;
+}
+
+.card li {
+  font-size: 1.2rem;
+}
+/* CARD DIV END */
+
+input,
+label {
+  font-family: Helvetica, sans-serif, serif;
+  margin: 1rem;
+  width: 60%;
+}
+
+input {
+  padding: 0.7rem;
+}
+
+/* THREE COLUMNS LAYOUT */
+.content {
+  width: 100%;
+  margin: auto;
+  background-color: #f3f3f3;
+  color: #333333;
+}
+.columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5% 0;
+}
+
+.column {
+  flex: 33.33%;
+}
+
+.column-box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 4%;
+  padding: 5%;
+  border-radius: 5px;
+}
+.column-box ul {
+  list-style: none;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+/* THREE COLUMNS LAYOUT END */
+
+/* FOOTER */
+footer {
+  background: #f3f3f3;
+  padding: 2rem 2rem 2rem 2rem;
+  height: auto;
+}
+
+footer ul {
+  height: auto;
+  margin: 0px;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer li {
+  list-style: none;
+  color: #333333;
+  margin-right: 2rem;
+}
+
+footer a {
+  font-family: Helvetica, sans-serif, serif;
+  text-decoration: none;
+  color: #333333;
+  font-size: 1rem;
+  transition: all 200ms ease-in;
+}
+
+footer a:hover {
+  color: #ea3c53;
+}
+/* FOOTER  END */
+
+/* ADDING REPONSIVE MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .box {
+    width: 40%;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .box {
+    width: 90%;
+    display: flex;
+  }
+  .center-div {
+    width: 90%;
+    text-align: left;
+    margin-left: auto;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .social-icons {
+    width: 60%;
+  }
+  .columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5% 0;
+  }
+  .column {
+    flex: 60%;
+  }
+}
