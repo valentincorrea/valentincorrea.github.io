@@ -1,206 +1,139 @@
 // SELECTORS
 const calculator = document.querySelector(".calculator");
-const calculatorButtons = document.querySelector(".calculator-buttons");
-const display = document.querySelector(".calculator-window");
+const keys = calculator.querySelector(".calculator_keys");
+const display = document.querySelector(".calculator_display");
 
 // EVENT LISTENERS
 
-calculatorButtons.addEventListener("click", (e) => {
+keys.addEventListener("click", (e) => {
   if (e.target.matches("button")) {
-    // DO SOMETHING
-
-    // DATA ACTIONS
-    const calculatorButtons = e.target;
-    const action = calculatorButtons.dataset.action;
-    // CALCULATOR WINDOW
-    const keyNumber = calculatorButtons.textContent;
-    const displayedValue = display.textContent;
-
-    // PRINT TO CONSOLE TEST
-    if (!action) {
-      calculatorButtons.dataset.previousKeyType = "number";
-      console.log("number kay");
-    }
-
-    // OPERATORS
-    if (action === "pos-neg" || action === "percentage" || action === "division" || action === "multiplication" || action === "subtraction" || action === "addition") {
-      console.log("operator key!");
-    }
-
-    // SPECIAL KEYS
-    if (action === "decimal") {
-      if (!displayedValue.includes(".")) {
-        display.textContent = displayedValue + ".";
-      } else if (previousKeyType === "operator") {
-        display.textContent = "0";
-      }
-      calculatorButtons.dataset.previousKeyType = "decimal";
-      console.log("Decimal key!");
-    }
-
-    if (action === "calculate") {
-      calculatorButtons.dataset.previousKeyType = "calculate";
-      console.log("Equal key!");
-    }
-
-    if (action === "clear") {
-      calculatorButtons.dataset.previousKeyType = "clear";
-      const clearButton = calculator.querySelector("[data-actio=clear]");
-      clearButton.textContent = "CE";
-    } else {
-      key.textContent = "AC";
-    }
-    if (calculatorButtons.textContent === "AC") {
-      calculator.dataset.firstValue = "";
-      calculator.dataset.modValue = "";
-      calculator.dataset.operator = "";
-      calculator.dataset.previousKeyType = "";
-      display.textContent = 0;
-      calculatorButtons.textContent = "AC";
-      calculator.dataset.previousKeyType = "clear";
-      console.log("Reset key!");
-    }
-
-    // CALCULATOR WINDOW
-    if (!action) {
-      if (displayedValue === "0" || previousKeyType === "operator" || previousKeyType === "calculate") {
-        display.textContent = keyNumber;
-      } else {
-        display.textContent = displayedValue + keyNumber;
-      }
-      calculator.dataset.previousKeyType = "number";
-    }
-
-    // ADDING DECIMALS
-    if (action === "decimal") {
-      if (!displayedValue.includes(".")) {
-        display.textContent = displayedValue + ".";
-      } else if (previousKeyType === "operator" || previousKeyType === "calculate") {
-        display.textContent = "0";
-      }
-      calculator.dataset.previousKeyType = "decimal";
-    }
-
     const key = e.target;
-    // ...
+    const action = key.dataset.action;
+    const keyContent = key.textContent;
+    const displayedNum = display.textContent;
+    const previousKeyType = calculator.dataset.previousKeyType;
 
     // Remove .is-depressed class from all keys
     Array.from(key.parentNode.children).forEach((k) => k.classList.remove("is-depressed"));
 
-    // HIGHLIGHT EFFECT is-depressed
-    if (action === "pos-neg" || action === "percentage" || action === "division" || action === "multiplication" || action === "subtraction" || action === "addition") {
-      calculatorButtons.classList.add("is-depressed");
-
-      //   CUSTOM ATTRIBUTE data-previous-key-type
+    if (!action) {
+      console.log("number key!");
+      calculator.dataset.previousKey = "number";
+      if (displayedNum === "0" || previousKeyType === "operator") {
+        display.textContent = keyContent;
+      } else {
+        display.textContent = displayedNum + keyContent;
+      }
+    }
+    if (action === "add" || action === "subtract" || action === "multiply" || action === "divide") {
+      console.log("operator key!");
+      key.classList.add("is-depressed");
+      // Add custom attribute
       calculator.dataset.previousKeyType = "operator";
+      calculator.dataset.firstValue = displayedNum;
+      calculator.dataset.operator = action;
 
-      // REPLACING THE OPERATOR previousKeyType
-      const previousKeyType = calculator.dataset.previousKeyType;
-      if (!action) {
-        if (displayedValue === "0" || previousKeyType === "operator") {
-          display.textContent = keyContent;
-        } else {
-          display.textContent = displayedValue + keyContent;
+      const firstValue = calculator.dataset.firstValue;
+      const operator = calculator.dataset.operator;
+      const secondValue = displayedNum;
+
+      if (firstValue && operator && previousKeyType !== "operator" && previousKeyType !== "calculate") {
+      } else {
+        calculator.dataset.firstValue = displayedNum;
+      }
+
+      // Note: It's sufficient to check for firstValue and operator because secondValue always exists
+      if (firstValue && operator && previousKeyType !== "operator") {
+        // Update calculated value as firstValue
+      } else {
+        // If there are no calculations, set displayedNum as the firstValue
+        calculator.dataset.firstValue = displayedNum;
+      }
+
+      key.classList.add("is-depressed");
+      calculator.dataset.previousKeyType = "operator";
+      calculator.dataset.firstValue = displayedNum;
+      calculator.dataset.operator = action;
+    }
+    if (action === "decimal") {
+      console.log("decimal key!");
+
+      // display.textContent = displayedNum + ".";
+      // Do nothing if string has a dot
+      if (!displayedNum.includes(".")) {
+        display.textContent = displayedNum + ".";
+        if (!displayedNum.includes(".")) {
+          display.textContent = displayedNum + ".";
+        } else if (previousKeyType === "operator") {
+          display.textContent = "0.";
         }
+        calculator.dataset.previousKey = "decimal";
       }
+    }
 
-      //   IF THE STRING CONTAINS A DOT, DO NOTHING
-      if (!displayedValue.includes(".")) {
-        display.textContent = displayedValue + ".";
+    if (action === "clear") {
+      calculator.dataset.previousKeyType = "clear";
+      console.log("clear key!");
+      if (key.textContent === "AC") {
+        calculator.dataset.firstValue = "";
+        calculator.dataset.modValue = "";
+        calculator.dataset.operator = "";
+        calculator.dataset.previousKeyType = "";
+      } else {
+        key.textContent = "AC";
       }
-
-      //   SECOND NUMBER
-      if (action === "calculate") {
-        const secondValue = displayedValue;
+      display.textContent = 0;
+      key.textContent = "AC";
+      calculator.dataset.previousKeyType = "clear";
+      if (action !== "clear") {
+        const clearButton = calculator.querySelector("[data-action=clear]");
+        clearButton.textContent = "CE";
       }
+    }
 
-      // OPERATORS
-      if (action === "pos-neg" || action === "percentage" || action === "division" || action === "multiplication" || action === "subtraction" || action === "addition") {
-        calculator.dataset.firstValue = displayedValue;
-        calculator.dataset.operator = action;
-
-        if (firstValue && operator && previousKeyType !== "operator" && previousKeyType !== "calculate") {
-          const calcValue = calculate(firstValue, operator, secondValue);
-          display.textContent = calcValue;
-          calculator.dataset.firstValue = calcValue;
-        } else {
-          calculator.dataset.firstValue = displayedNum;
+    if (action === "calculate") {
+      if (firstValue) {
+        if (previousKeyType === "calculate") {
+          firstValue = displayedNum;
+          secondValue = calculator.dataset.modValue;
         }
+        display.textContent = calculator(firstValue, operator, secondValue);
       }
 
-      //   CALCULATION
-      if (action === "calculate") {
-        const firstValue = calculator.dataset.firstValue;
-        const operator = calculator.dataset.operator;
-        const secondValue = displayedValue;
-        display.textContent = calculate(firstValue, operator, secondValue);
+      // Set modValue attribute
+      calculator.dataset.modValue = secondValue;
+      calculator.dataset.previousKeyType = "calculate";
+      console.log("equal key!");
+      const firstValue = calculator.dataset.firstValue;
+      const operator = calculator.dataset.operator;
+      const secondValue = displayedNum;
+      display.textContent = calculator(firstValue, operator, secondValue);
+
+      if (displayedNum === "0" || previousKeyType === "operator" || previousKeyType === "calculate") {
+        display.textContent = keyContent;
+      } else {
+        display.textContent = displayedNum + keyContent;
+      }
+      calculator.dataset.previousKeyType = "number";
+    }
+
+    if (action === "decimal") {
+      if (!displayedNum.includes(".")) {
+        display.textContent = displayedNum + ".";
+      } else if (previousKeyType === "operator" || previousKeyType === "calculate") {
+        display.textContent = "0.";
       }
 
-      // CALCULATION FUNCTION
+      calculator.dataset.previousKeyType = "decimal";
+
       const calculate = (n1, operator, n2) => {
-        let result = "";
-        if (action === "pos-neg" || action === "percentage" || action === "division" || action === "multiplication" || action === "subtraction" || action === "addition") {
-          const firstValue = calculator.dataset.firstValue;
-          const operator = calculator.dataset.operator;
-          const secondValue = displayedValue;
-
-          // THE SECOND VALUE EXISTS IF THE FIRST VALUE EXISTS
-          if (firstValue && operator) {
-            display.textContent = calculate(firstValue, operator, secondValue);
-          }
-          calculatorButtons.classList.add("is-dipressed");
-          calculator.dataset.previousKeyType = "operator";
-          calculator.dataset.firstValue = displayedValue;
-          calculator.dataset.operator = action;
-        }
-        if (firstValue && operator && previousKeyType !== "operator") {
-          const calcculateValue = calculate(firstValue, operator, secondValue);
-          display.textContent = calcculateValue;
-          display.textContent = calculator(firstValue, operator, secondValue);
-          //   UPDATE THE CALCULATOR VALUE
-          calculator.dataset.firstValue = calcculateValue;
-        } else {
-          // IF THERE IS NOT CALCULATION, THE DISPLAY IS EQUAL TO THE FIRST VALUE
-          calculator.dataset.firstValue = calcculateValue;
-        }
-        if (action === "calculate") {
-          const firstValue = calculator.dataset.firstValue;
-          const operator = calculator.dataset.operator;
-          const secondValue = displayedValue;
-        }
-        if (firstValue) {
-          display.textContent = calculate(firstValue, operator, secondValue);
-        }
-        calculator.dataset.previousKeyType = "calculate";
-        calculatorButtons.classList.add("is-depressed");
-        calculator.dataset.previousKeyType = "operator";
-        calculator.dataset.operator = action;
-
-        // SET THE VALUE ATTRIBUTE
-        calculator.dataset.modValue = secondValue;
-        calculator.dataset.previousKeyType = "calcalete";
-
-        if (firstValue) {
-          if (previousKeyType === "calculate") {
-            firstValue = displayedValue;
-            secondValue = calculator.dataset.modValue;
-          }
-          display.textContent = calculate(firstValue, operator, secondValue);
-        }
-        if (operator === "addition") {
-          //PERFORM CALCULATION ADN RETURN CA;CULATED VALUE
-          result = parseFloat(n1) + parseFloat(n2);
-        } else if (operator === "multiplication") {
-          result = parseFloat(n1) * parseFloat(n2);
-        } else if (operator === "division") {
-          result = parseFloat(n1) / parseFloat(n2);
-        } else if (operator === "percentage") {
-          result = parseFloat(n1) / 100;
-        }
-        return result;
+        const firstNum = parseFloat(n1);
+        const secondNum = parseFloat(n2);
+        if (operator === "add") return firstNum + secondNum;
+        if (operator === "subtract") return firstNum - secondNum;
+        if (operator === "multiply") return firstNum * secondNum;
+        if (operator === "divide") return firstNum / secondNum;
       };
     }
   }
 });
-
-// TODO REFACTOR THE CODE

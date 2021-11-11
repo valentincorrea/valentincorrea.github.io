@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>Valentin Correa, ITIS 3135, Activity #7 - Walk Thru A Calculator Build</title>
-    <meta name="description" content="ITIS 3135, Activity #7 - Walk Thru A Calculator Build />
+    <meta name="description" content="ITIS 3135, Activity #7 - Walk Thru A Calculator Build" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/calculator.css" />
   </head>
   <body id="main-body">
     <div class="main-nav">
@@ -18,47 +18,45 @@
         <li><a href="https://webpages.uncc.edu/ncorream/itis3135/website_evaluations.html">Website Evaluations</a></li>
         <li><a href="https://webpages.uncc.edu/ncorream/itis3135/name-the-polygon.html">Name the Polygon</a></li>
         <li><a href="https://webpages.uncc.edu/ncorream/itis3135/calculator-try.html" class="active">Calculator Try</a></li>
-        <a href="https://webpages.uncc.edu/ncorream/itis3135/arrays.html">Arrays</a>
-        <a href="https://webpages.uncc.edu/ncorream/itis3135/project_rand.html" class="active">Project Design</a>
+        <li><a href="https://webpages.uncc.edu/ncorream/itis3135/arrays.html">Arrays</a></li>
+        <li><a href="https://webpages.uncc.edu/ncorream/itis3135/project_rand.html" class="active">Project Design</a></li>
       </ul>
     </div>
     <header>
       <h1>Activity #7 - Walk Thru A Calculator Build</h1>
     </header>
+
+    <!-- NEW CALCULATOR START-->
     <div class="calculator">
-      <div class="calculator-window">0</div>
-      <!-- <input type="text" class="calculator-window" value="0" /> -->
-      <div class="calculator-buttons">
-        <!-- First row -->
-        <button class="operators" data-action="clear" type="button" value="ac">AC</button>
-        <button class="operators" data-action="pos-neg" type="button" value="pos-neg">+/-</button>
-        <button class="operators" data-action="percentage" type="button" value="%">%</button>
-        <button class="operators" data-action="division" type="button" value="/">/</button>
-        <!-- Second row -->
-        <button type="button" value="7">7</button>
-        <button type="button" value="8">8</button>
-        <button type="button" value="9">9</button>
-        <button class="operator" data-action="multiplication" type="button" value="*">*</button>
-        <!-- Third row -->
-        <button type="button" value="4">4</button>
-        <button type="button" value="5">5</button>
-        <button type="button" value="6">6</button>
-        <button class="operator" data-action="subtraction" type="button" value="-">-</button>
-        <!-- fourt row -->
-        <button type="button" value="1">1</button>
-        <button type="button" value="2">2</button>
-        <button type="button" value="3">3</button>
-        <button class="operator" data-action="addition" type="button" value="+">+</button>
-        <!-- fourt row -->
-        <button type="button" value=""></button>
-        <button type="button" value="0">0</button>
-        <button class="operator" data-action="decimal" type="button" value=".">.</button>
-        <button class="operator" data-action="calculate" type="button" value="=">=</button>
+      <div class="calculator_display">0</div>
+
+      <div class="calculator_keys">
+        <button class="key_operator" data-action="add">+</button>
+        <button class="key_operator" data-action="subtract">-</button>
+        <button class="key_operator" data-action="multiply">&times;</button>
+        <button class="key_operator" data-action="divide">÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button data-action="decimal">.</button>
+        <button data-action="clear">AC</button>
+        <button class="key_equal" data-action="calculate">=</button>
       </div>
     </div>
 
+    <div class="spacer"></div>
+
+    <!-- NEW CALCULATOR START -->
+
     <footer>
-      <div class="container">
+      <div class="footer-container">
         <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fncorream%2Fitis3135%2Fname-the-polygon.html" target="_blank">
           <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator" />
         </a>
@@ -66,7 +64,7 @@
           <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator" />
         </a>
       </div>
-      <div class="container">
+      <div class="footer-container">
         <a href="https://webpages.uncc.edu/ncorream/itis3135/introduction.html">Introduction | </a>
         <a href="https://github.com/valentincorrea" target="_blank">GitHub | </a>
         <a href="https://www.linkedin.com/in/valentincorrea/" target="_blank">LinkedIn | </a>
