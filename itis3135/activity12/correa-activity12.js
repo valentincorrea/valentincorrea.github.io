@@ -9,6 +9,7 @@ $(document).ready(function () {
     randomStart: true,
     captions: true,
     pagerType: "short",
+    // I added the adaptiveHeight to fix the issues with images not having the same height
     adaptiveHeight: true,
   });
 });
