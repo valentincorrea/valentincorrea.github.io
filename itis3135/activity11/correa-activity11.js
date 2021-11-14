@@ -1,7 +1,7 @@
 // <!-- jQuery call to the accordion() method. -->
-$(document).ready(function () {
-  $("#tabs").tabs();
-});
+// $(document).ready(function () {
+//   $("#tabs").tabs();
+// });
 
 $(document).ready(function () {
   $(function () {
