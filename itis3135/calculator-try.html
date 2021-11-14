@@ -6,6 +6,7 @@
     <meta name="description" content="ITIS 3135, Activity #7 - Walk Thru A Calculator Build" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/calculator.css" />
+    <script src="scripts/calculator-try.js" defer></script>
   </head>
   <body id="main-body">
     <div class="main-nav">
@@ -30,31 +31,30 @@
     </header>
 
     <!-- NEW CALCULATOR START-->
-    <div class="calculator">
-      <div class="calculator_display">0</div>
-
-      <div class="calculator_keys">
-        <button class="key_operator" data-action="add">+</button>
-        <button class="key_operator" data-action="subtract">-</button>
-        <button class="key_operator" data-action="multiply">&times;</button>
-        <button class="key_operator" data-action="divide">÷</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>0</button>
-        <button data-action="decimal">.</button>
-        <button data-action="clear">AC</button>
-        <button class="key_equal" data-action="calculate">=</button>
+  <div class="calculator-grid">
+      <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
       </div>
+      <button data-all-clear class="span-two">AC</button>
+      <button data-delete>DEL</button>
+      <button data-operation>÷</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>*</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>+</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>-</button>
+      <button data-number>.</button>
+      <button data-number>0</button>
+      <button data-equals class="span-two">=</button>
     </div>
-
-    <div class="spacer"></div>
 
     <!-- NEW CALCULATOR START -->
 
@@ -83,6 +83,5 @@
         <p>Copyright &copy; 2021 Designed by Vanished Chameleon Design LLC</p>
       </div>
     </footer>
-    <script src="scripts/calculator-try.js"></script>
   </body>
 </html>
