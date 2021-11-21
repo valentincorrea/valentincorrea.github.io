@@ -8,29 +8,6 @@ $(document).ready(function () {
   });
 });
 
-// $(document).ready(function () {
-//   $.getJSON({
-//     url: "team.json",
-//     beforeSend: function () {
-//       $("#team").xhr.html("Loading...");
-//     },
-//     timeout: 10000,
-//     error: function (xhr, status, error) {
-//       alert("Error: " + xhr.status + " - " + error);
-//     },
-//     error: function (xhr, status, error) {
-//       alert("Error: " + xhr.status + " - " + error);
-//     },
-//     success: function (data) {
-//       $.each(data, function () {
-//         $.each(this, function (key, value) {
-//           $("#team").append("Name: " + value.name + "<br>" + "Title: " + value.timeout + "<br>" + "Bio: " + value.bio + "<br><br>");
-//         });
-//       });
-//     },
-//   });
-// });
-
 // ORIGINAL XML CODE
 
 // $(document).ready(function () {
