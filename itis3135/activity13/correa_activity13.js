@@ -9,10 +9,9 @@
 // });
 
 $(document).ready(function () {
-  $.ajax({
-    url: "https://webpages.uncc.edu/ncorream/itis3135/activity13/team.json",
-    method: "GET",
-    beforeSend: function (xhr) {
+  $.getJSON({
+    url: "team.json",
+    beforeSend: function () {
       $("#team").xhr.html("Loading..." + "<br>");
     },
     timeout: 10000,
