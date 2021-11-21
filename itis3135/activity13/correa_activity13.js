@@ -26,8 +26,8 @@ $(document).ready(function () {
           console.log("Before storing the JSON to the variable");
           var xmlDoc = $(this);
           //
-          console.log(xmlDoc);
-          $("#team").append("<h3>" + JSON.parse(xmlDoc).find("name").text() + "</h3>" + JSON.parse(xmlDoc).find("title").text() + "<br>" + JSON.parse(xmlDoc).find("bio").text() + "<br>");
+          console.log(JSON.parse(xmlDoc));
+          $("#team").append("<h3>" + xmlDoc.find("name").text() + "</h3>" + xmlDoc.find("title").text() + "<br>" + xmlDoc.find("bio").text() + "<br>");
         });
     },
   });
