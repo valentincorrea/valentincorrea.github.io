@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $.ajax({
-    type: "get",
     url: "https://webpages.uncc.edu/ncorream/itis3135/activity13/team.json",
+    method: "GET",
     beforeSend: function () {
       //
       console.log("Before sending data");
@@ -27,7 +27,7 @@ $(document).ready(function () {
           var xmlDoc = $(this);
           //
           console.log(JSON.parse(xmlDoc));
-          $("#team").append("<h3>" + xmlDoc.find("name").text() + "</h3>" + xmlDoc.find("title").text() + "<br>" + xmlDoc.find("bio").text() + "<br>");
+          $("#team").append("<h3>" + xmlDoc.name + "</h3>" + xmlDoc.title + "<br>" + xmlDoc.bio + "<br>");
         });
     },
   });
