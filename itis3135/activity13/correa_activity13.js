@@ -18,7 +18,7 @@ $(document).ready(function () {
       //
       console.log("JSON has been received");
       $("#team").html("");
-      $(data)
+      $(JSON.parse(data))
         .find("management")
         .children()
         .each(function () {
