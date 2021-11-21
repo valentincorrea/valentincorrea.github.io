@@ -12,20 +12,15 @@ $(document).ready(function () {
   $.getJSON({
     url: "team.json",
     beforeSend: function () {
-      $("#team").xhr.html("Loading..." + "<br>");
+      $("#team").xhr.html("Loading...");
     },
     timeout: 10000,
     error: function (xhr, status, error) {
-      //
-      console.log("Alert Error");
       alert("Error: " + xhr.status + " - " + error);
     },
     error: function (xhr, status, error) {
-      //
-      console.log("Alert Error");
       alert("Error: " + xhr.status + " - " + error);
     },
-    dataType: "JSON",
     success: function (data) {
       $.each(data, function () {
         $.each(this, function (key, value) {
