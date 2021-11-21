@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $.getJSON({
+  $.ajax({
     type: "get",
     url: "https://webpages.uncc.edu/ncorream/itis3135/activity13/team.json",
     beforeSend: function () {
@@ -18,7 +18,7 @@ $(document).ready(function () {
       //
       console.log("JSON has been received");
       $("#team").html("");
-      $(JSON.parse(data))
+      $(data)
         .find("management")
         .children()
         .each(function () {
