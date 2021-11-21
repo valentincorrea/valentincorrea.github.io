@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $.getJSON({
     type: "get",
-    url: "team.json",
+    url: "https://webpages.uncc.edu/ncorream/itis3135/activity13/team.json",
     beforeSend: function () {
       //
       console.log("Before sending data");
