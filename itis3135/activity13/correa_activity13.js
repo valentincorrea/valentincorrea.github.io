@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $.ajax({
+  $.getJSON({
     type: "get",
     url: "team.json",
     beforeSend: function () {
