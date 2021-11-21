@@ -1,35 +1,35 @@
-// $(document).ready(function () {
-//   $.getJSON("team.json", function (data) {
-//     $.each(data, function () {
-//       $.each(this, function (key, value) {
-//         $("#team").append("Name: " + value.name + "<br>" + "Title: " + value.timeout + "<br>" + "Bio: " + value.bio + "<br><br>");
-//       });
-//     });
-//   });
-// });
-
 $(document).ready(function () {
-  $.getJSON({
-    url: "team.json",
-    beforeSend: function () {
-      $("#team").xhr.html("Loading...");
-    },
-    timeout: 10000,
-    error: function (xhr, status, error) {
-      alert("Error: " + xhr.status + " - " + error);
-    },
-    error: function (xhr, status, error) {
-      alert("Error: " + xhr.status + " - " + error);
-    },
-    success: function (data) {
-      $.each(data, function () {
-        $.each(this, function (key, value) {
-          $("#team").append("Name: " + value.name + "<br>" + "Title: " + value.timeout + "<br>" + "Bio: " + value.bio + "<br><br>");
-        });
+  $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity13/team.json", function (data) {
+    $.each(data, function () {
+      $.each(this, function (key, value) {
+        $("#team").append("Name: " + value.name + "<br>" + "Title: " + value.timeout + "<br>" + "Bio: " + value.bio + "<br><br>");
       });
-    },
+    });
   });
 });
+
+// $(document).ready(function () {
+//   $.getJSON({
+//     url: "team.json",
+//     beforeSend: function () {
+//       $("#team").xhr.html("Loading...");
+//     },
+//     timeout: 10000,
+//     error: function (xhr, status, error) {
+//       alert("Error: " + xhr.status + " - " + error);
+//     },
+//     error: function (xhr, status, error) {
+//       alert("Error: " + xhr.status + " - " + error);
+//     },
+//     success: function (data) {
+//       $.each(data, function () {
+//         $.each(this, function (key, value) {
+//           $("#team").append("Name: " + value.name + "<br>" + "Title: " + value.timeout + "<br>" + "Bio: " + value.bio + "<br><br>");
+//         });
+//       });
+//     },
+//   });
+// });
 
 // ORIGINAL XML CODE
 
