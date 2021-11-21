@@ -1,47 +1,43 @@
+// $(document).ready(function () {
+//   $.getJSON("team.json", function (data) {
+//     $.each(data, function () {
+//       $.each(this, function (key, value) {
+//         $("#team").append("Name: " + value.name + "<br>" + "Title: " + value.timeout + "<br>" + "Bio: " + value.bio + "<br><br>");
+//       });
+//     });
+//   });
+// });
+
 $(document).ready(function () {
-  $.getJSON("team.json", function (data) {
-    $.each(data, function () {
-      $.each(this, function (key, value) {
-        $("#team").append("Name: " + value.name + "<br>" + "Title: " + value.timeout + "<br>" + "Bio: " + value.bio + "<br><br>");
+  $.getJSON({
+    url: "https://webpages.uncc.edu/ncorream/itis3135/activity13/team.json",
+    method: "GET",
+    beforeSend: function (xhr) {
+      $("#team").html("Loading..." + "<br>");
+    },
+    timeout: 10000,
+    error: function (xhr, status, error) {
+      //
+      console.log("Alert Error");
+      alert("Error: " + xhr.status + " - " + error);
+    },
+    error: function (xhr, status, error) {
+      //
+      console.log("Alert Error");
+      alert("Error: " + xhr.status + " - " + error);
+    },
+    dataType: "JSON",
+    success: function (data) {
+      $.each(data, function () {
+        $.each(this, function (key, value) {
+          $("#team").append("Name: " + value.name + "<br>" + "Title: " + value.timeout + "<br>" + "Bio: " + value.bio + "<br><br>");
+        });
       });
-    });
+    },
   });
 });
 
-// $(document).ready(function () {
-//   $.ajax({
-//     url: "https://webpages.uncc.edu/ncorream/itis3135/activity13/team.json",
-//     method: "GET",
-//     beforeSend: function () {
-//       //
-//       console.log("Before sending data");
-//       $("#team").html("Loading...");
-//     },
-//     timeout: 10000,
-//     error: function (xhr, status, error) {
-//       //
-//       console.log("Alert Error");
-//       alert("Error: " + xhr.status + " - " + error);
-//     },
-//     dataType: "JSON",
-//     success: function (data) {
-//       //
-//       console.log("JSON has been received");
-//       $("#team").html("");
-//       $(data)
-//         .find("management")
-//         .children()
-//         .each(function () {
-//           //
-//           console.log("Before storing the JSON to the variable");
-//           var xmlDoc = $(this);
-//           //
-//           console.log(JSON.parse(xmlDoc));
-//           $("#team").append("<h3>" + xmlDoc.name + "</h3>" + xmlDoc.title + "<br>" + xmlDoc.bio + "<br>");
-//         });
-//     },
-//   });
-// });
+// ORIGINAL XML CODE
 
 // $(document).ready(function () {
 //   $.ajax({
@@ -67,3 +63,4 @@ $(document).ready(function () {
 //     },
 //   });
 // });
+//
