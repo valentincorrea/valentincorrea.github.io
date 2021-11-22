@@ -5,7 +5,7 @@ $(document).ready(function () {
       $.each(data, function () {
         $.each(this, function (key, value) {
           console.log(data);
-          console.log("Month: " + value.month + "<br>" + "Title: " + value.title + "<br>" + "Speaker: " + value.speaker + "<br><br>");
+          $("#test").append("Month: " + value.month + "<br>" + "Title: " + value.title + "<br>" + "Speaker: " + value.speaker + "<br>" + "Image: " + value.image + "<br>" + "Text: " + value.text + "<br>");
         });
       });
     });
