@@ -5,7 +5,15 @@ $(document).ready(function () {
       $.each(data, function () {
         $.each(this, function (key, value) {
           console.log(data);
-          $("#test").append("Month: " + value.month + "<br>" + "Title: " + value.title + "<br>" + "Speaker: " + value.speaker + "<br>" + "Image: " + value.image + "<br>" + "Text: " + value.text + "<br>");
+          value.month = "";
+          value.title = "";
+          value.speaker = "";
+          value.image = "";
+          $("#mont").append(value.month);
+          $("#title").append(value.title);
+          $("#speaker").append(value.speaker);
+          $("#picture").append(value.image);
+          //   $("#test").append("Month: " + value.month + "<br>" + "Title: " + value.title + "<br>" + "Speaker: " + value.speaker + "<br>" + "Image: " + value.image + "<br>" + "Text: " + value.text + "<br>");
         });
       });
     });
