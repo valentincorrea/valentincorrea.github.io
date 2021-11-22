@@ -3,11 +3,11 @@ $(document).ready(function () {
     console.log("Clicked");
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/chua.json", function (data) {
       $.each(data, function () {
-        value.month = "";
-        value.title = "";
-        value.speaker = "";
-        value.image = "";
         $.each(this, function (key, value) {
+          value.month = "";
+          value.title = "";
+          value.speaker = "";
+          value.image = "";
           console.log(data);
           $("#month").append(value.month);
           $("#title").append(value.title);
