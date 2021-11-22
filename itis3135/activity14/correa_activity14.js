@@ -2,14 +2,14 @@ $(document).ready(function () {
   $("a[title='chua']").click(function () {
     console.log("Clicked");
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/chua.json", function (data) {
-      //   value.month = "";
-      //   value.title = "";
-      //   value.speaker = "";
-      //   value.image = "";
       $.each(data, function () {
+        value.month = "";
+        value.title = "";
+        value.speaker = "";
+        value.image = "";
         $.each(this, function (key, value) {
           console.log(data);
-          $("#mont").append(value.month);
+          $("#month").append(value.month);
           $("#title").append(value.title);
           $("#speaker").append(value.speaker);
           $("#picture").append(value.image);
