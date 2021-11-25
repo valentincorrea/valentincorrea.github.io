@@ -2,19 +2,16 @@ $(document).ready(function () {
   $("a[title='chua']").click(function () {
     console.log("Clicked");
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/chua.json", function (data) {
-      $.each(data, function () {
+      $.each(data, function (key, value) {
+        console.log(data);
         data.month = "";
         data.title = "";
         data.speaker = "";
         data.image = "";
-        $.each(this, function (key, value) {
-          console.log(data);
-          $("#month").append(value.month);
-          $("#title").append(value.title);
-          $("#speaker").append(value.speaker);
-          $("#picture").append(value.image);
-          //   $("#test").append("Month: " + value.month + "<br>" + "Title: " + value.title + "<br>" + "Speaker: " + value.speaker + "<br>" + "Image: " + value.image + "<br>" + "Text: " + value.text + "<br>");
-        });
+        $("#month").append(value.month);
+        $("#title").append(value.title);
+        $("#speaker").append(value.speaker);
+        $("#picture").append(value.image);
       });
     });
   });
