@@ -7,7 +7,7 @@ $(document).ready(function () {
   speaker_tobbin = document.addEventListener("click", function () {
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/tobbin.json", function (data) {
       console.log(data);
-      switch_speaker = data.speaker[0];
+      switch_speaker = data.speaker;
       switch_speaker = data.month = "";
       switch_speaker = data.title = "";
       switch_speaker = data.speaker = "";
@@ -22,7 +22,7 @@ $(document).ready(function () {
   speaker_sorkin = document.addEventListener("click", function () {
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/sorkin.json", function (data) {
       console.log(data);
-      switch_speaker = data.speaker[0];
+      switch_speaker = data.speaker;
       switch_speaker = data.month = "";
       switch_speaker = data.title = "";
       switch_speaker = data.speaker = "";
@@ -36,7 +36,7 @@ $(document).ready(function () {
   speaker_chua = document.addEventListener("click", function () {
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/chua.json", function (data) {
       console.log(data);
-      switch_speaker = data.speaker[0];
+      switch_speaker = data.speaker;
       switch_speaker = data.month = "";
       switch_speaker = data.title = "";
       switch_speaker = data.speaker = "";
@@ -50,7 +50,7 @@ $(document).ready(function () {
   speaker_sampson = document.addEventListener("click", function () {
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/sampson.json", function (data) {
       console.log(data);
-      switch_speaker = data.speaker[0];
+      switch_speaker = data.speaker;
       switch_speaker = data.month = "";
       switch_speaker = data.title = "";
       switch_speaker = data.speaker = "";
