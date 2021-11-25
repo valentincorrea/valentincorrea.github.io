@@ -7,53 +7,58 @@ $(document).ready(function () {
   speaker_tobbin = document.addEventListener("click", function () {
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/tobbin.json", function (data) {
       console.log(data);
-      data.month = "";
-      data.title = "";
-      data.speaker = "";
-      data.image = "";
-      $("#month").append(data.month);
-      $("#title").append(data.title);
-      $("#speaker").append(data.speaker);
+      switch_speaker = data.speaker[0];
+      switch_speaker = data.month = "";
+      switch_speaker = data.title = "";
+      switch_speaker = data.speaker = "";
+      switch_speaker = data.image = "";
+      $("#month").append(switch_speaker.month);
+      $("#title").append(switch_speaker.title);
+      $("#speaker").append(switch_speaker.speaker);
+      $("#picture").append(switch_speaker.image);
       $("#picture").append(data.image);
     });
   });
   speaker_sorkin = document.addEventListener("click", function () {
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/sorkin.json", function (data) {
       console.log(data);
-      data.month = "";
-      data.title = "";
-      data.speaker = "";
-      data.image = "";
-      $("#month").append(data.month);
-      $("#title").append(data.title);
-      $("#speaker").append(data.speaker);
-      $("#picture").append(data.image);
+      switch_speaker = data.speaker[0];
+      switch_speaker = data.month = "";
+      switch_speaker = data.title = "";
+      switch_speaker = data.speaker = "";
+      switch_speaker = data.image = "";
+      $("#month").append(switch_speaker.month);
+      $("#title").append(switch_speaker.title);
+      $("#speaker").append(switch_speaker.speaker);
+      $("#picture").append(switch_speaker.image);
     });
   });
   speaker_chua = document.addEventListener("click", function () {
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/chua.json", function (data) {
       console.log(data);
-      data.month = "";
-      data.title = "";
-      data.speaker = "";
-      data.image = "";
-      $("#month").append(data.month);
-      $("#title").append(data.title);
-      $("#speaker").append(data.speaker);
-      $("#picture").append(data.image);
+      switch_speaker = data.speaker[0];
+      switch_speaker = data.month = "";
+      switch_speaker = data.title = "";
+      switch_speaker = data.speaker = "";
+      switch_speaker = data.image = "";
+      $("#month").append(switch_speaker.month);
+      $("#title").append(switch_speaker.title);
+      $("#speaker").append(switch_speaker.speaker);
+      $("#picture").append(switch_speaker.image);
     });
   });
   speaker_sampson = document.addEventListener("click", function () {
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/sampson.json", function (data) {
       console.log(data);
-      data.month = "";
-      data.title = "";
-      data.speaker = "";
-      data.image = "";
-      $("#month").append(data.month);
-      $("#title").append(data.title);
-      $("#speaker").append(data.speaker);
-      $("#picture").append(data.image);
+      switch_speaker = data.speaker[0];
+      switch_speaker = data.month = "";
+      switch_speaker = data.title = "";
+      switch_speaker = data.speaker = "";
+      switch_speaker = data.image = "";
+      $("#month").append(switch_speaker.month);
+      $("#title").append(switch_speaker.title);
+      $("#speaker").append(switch_speaker.speaker);
+      $("#picture").append(switch_speaker.image);
     });
   });
 
