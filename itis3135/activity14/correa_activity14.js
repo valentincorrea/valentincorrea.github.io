@@ -4,14 +4,14 @@ $(document).ready(function () {
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/chua.json", function (data) {
       $.each(data, function (key, value) {
         console.log(data);
-        value.month = "";
-        value.title = "";
-        value.speaker = "";
-        value.image = "";
-        $("#month").append(value.month);
-        $("#title").append(value.title);
-        $("#speaker").append(value.speaker);
-        $("#picture").append(value.image);
+        // value.month = "";
+        // value.title = "";
+        // value.speaker = "";
+        // value.image = "";
+        $("#month").append(data.month);
+        $("#title").append(data.title);
+        $("#speaker").append(data.speaker);
+        $("#picture").append(data.image);
       });
     });
   });
