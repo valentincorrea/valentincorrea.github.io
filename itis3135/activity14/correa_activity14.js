@@ -19,7 +19,7 @@ $(document).ready(function () {
   function test1() {
     console.log("test 1");
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/toobin.json", function (obj) {
-      person = obj.speakers;
+      var person = obj.speakers;
       $("h1").empty();
       $("h2").empty();
       $("h3").empty();
@@ -33,7 +33,7 @@ $(document).ready(function () {
   function test2() {
     console.log("test 2");
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/sorkin.json", function (obj) {
-      person = obj.speakers;
+      var person = obj.speakers;
       $("h1").empty();
       $("h2").empty();
       $("h3").empty();
@@ -47,7 +47,7 @@ $(document).ready(function () {
   function test3() {
     console.log("test 3");
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/chua.json", function (obj) {
-      person = obj.speakers;
+      var person = obj.speakers;
       $("h1").empty();
       $("h2").empty();
       $("h3").empty();
@@ -61,7 +61,7 @@ $(document).ready(function () {
   function test4() {
     console.log("test 4");
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/sampson.json", function (obj) {
-      person = obj.speakers;
+      var person = obj.speakers;
       $("h1").empty();
       $("h2").empty();
       $("h3").empty();
