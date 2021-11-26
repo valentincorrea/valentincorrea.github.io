@@ -22,10 +22,7 @@ $(document).ready(function () {
   });
 
   function switchSpeaker() {
-    $.ajax({
-      url: "https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/tobbin.json",
-      method: "GET",
-    }).done(function (data) {
+    $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/tobbin.json").done(function (data) {
       console.log(data);
     });
   }
