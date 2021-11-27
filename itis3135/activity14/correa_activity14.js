@@ -4,35 +4,32 @@ $(document).ready(function () {
   const speaker_chua = document.querySelector("[title='chua']");
   const speaker_sampson = document.querySelector("[title='sampson']");
 
-  speaker_toobin.addEventListener("click", test1);
-  speaker_sorkin.addEventListener("click", test2);
-  speaker_chua.addEventListener("click", test3);
-  speaker_sampson.addEventListener("click", test4);
+  speaker_toobin.addEventListener("click", toobinButton);
+  speaker_sorkin.addEventListener("click", sorkinButton);
+  speaker_chua.addEventListener("click", chuaButton);
+  speaker_sampson.addEventListener("click", sampsonButton);
 
-  function test1() {
+  function toobinButton() {
     console.log("test 1");
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/toobin.json", function (obj) {
       switchSpeaker(obj);
     });
   }
-  function test2() {
+  function sorkinButton() {
     console.log("test 2");
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/sorkin.json", function (obj) {
-      // var person = obj.speakers;
       switchSpeaker(obj);
     });
   }
-  function test3() {
+  function chuaButton() {
     console.log("test 3");
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/chua.json", function (obj) {
-      // var person = obj.speakers;
       switchSpeaker(obj);
     });
   }
-  function test4() {
+  function sampsonButton() {
     console.log("test 4");
     $.getJSON("https://webpages.uncc.edu/ncorream/itis3135/activity14/json_files/sampson.json", function (obj) {
-      // var person = obj.speakers;
       switchSpeaker(obj);
     });
   }
@@ -43,11 +40,11 @@ $(document).ready(function () {
     $("h3").empty();
     $("#text").empty();
     $("#picture").empty();
-    $("h1").append(person.title);
-    $("h2").append(person.month);
-    $("h3").append(person.speaker);
-    $("#text").append(person.text);
-    // $("#picture").append(`<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt = "${person.speaker} picture">`);
+
+    // $("h1").append(person.title);
+    // $("h2").append(person.month);
+    // $("h3").append(person.speaker);
+    // $("#text").append(person.text);
 
     document.getElementById("content").innerHTML = `
     <h1>${person.title}</h1>
@@ -55,7 +52,5 @@ $(document).ready(function () {
     <h3>${person.speaker}</h3>
     <img src="${person.image}" alt = "${person.speaker} picture">
     <p>${person.text}</p>`;
-
-    // .innerHTML = '<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt="${person.speaker}_picture" />';
   }
 });
