@@ -42,15 +42,19 @@ $(document).ready(function () {
     $("h2").empty();
     $("h3").empty();
     $("#text").empty();
-    $("#picture") = "<img src='' alt=''>";
+    $("#picture").empty();
     $("h1").append(person.title);
     $("h2").append(person.month);
     $("h3").append(person.speaker);
     $("#text").append(person.text);
-    $("#picture") = `<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt = "${person.speaker} picture">`;
     // $("#picture").append(`<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt = "${person.speaker} picture">`);
 
-    // document.getElementById("main_content").innerHTML = `<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt = "${person.speaker} picture">`;
+    document.getElementsByTagName("main").innerHTML = `
+    <h1>${person.title}</h1>
+    <h2>${person.month}</h2>
+    <h3>${person.speaker}</h3>
+    <p>${person.text}</p>
+    <img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt = "${person.speaker} picture">`;
 
     // .innerHTML = '<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt="${person.speaker}_picture" />';
   }
