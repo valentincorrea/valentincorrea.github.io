@@ -69,6 +69,6 @@ $(document).ready(function () {
     $("h2").append(person.month);
     $("h3").append(person.speaker);
     $("#text").append(person.text);
-    $("#picture").append((src = "https://webpages.uncc.edu/ncorream/itis3135/activity14/" + person.image));
+    $("#picture").append(<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/$(person.image)" alt="$(person.speaker) + picture" />);
   }
 });
