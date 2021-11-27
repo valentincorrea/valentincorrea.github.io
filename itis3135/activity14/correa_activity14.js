@@ -47,7 +47,7 @@ $(document).ready(function () {
     $("h2").append(person.month);
     $("h3").append(person.speaker);
     $("#text").append(person.text);
-    $("#main_content").append("<img src=" + "person.image " + "/>");
+    document.getElementById("main_content").innerHTML = `<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt = "${person.speaker} picture">`;
 
     // .innerHTML = '<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt="${person.speaker}_picture" />';
   }
