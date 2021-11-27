@@ -49,7 +49,7 @@ $(document).ready(function () {
     $("#text").append(person.text);
     // $("#picture").append(`<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt = "${person.speaker} picture">`);
 
-    document.getElementsByTagName("main").innerHTML = `
+    document.getElementById("content").innerHTML = `
     <h1>${person.title}</h1>
     <h2>${person.month}</h2>
     <h3>${person.speaker}</h3>
