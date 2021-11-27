@@ -80,7 +80,7 @@ $(document).ready(function () {
     // $("h2").empty();
     // $("h3").empty();
     // $("#text").empty();
-    var person = speakerPersons[0];
+    var person = speakerPersons.speakers[0];
     $("h1").append(person.title);
     $("h2").append(person.month);
     $("h3").append(person.speaker);
