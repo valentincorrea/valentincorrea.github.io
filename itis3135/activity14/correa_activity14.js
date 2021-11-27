@@ -54,7 +54,7 @@ $(document).ready(function () {
     <h2>${person.month}</h2>
     <h3>${person.speaker}</h3>
     <p>${person.text}</p>
-    <img src="${person.image}" alt = "${person.speaker} picture">`;
+    <img src="/${person.image}" alt = "${person.speaker} picture">`;
 
     // .innerHTML = '<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt="${person.speaker}_picture" />';
   }
