@@ -23,10 +23,7 @@ $(document).ready(function () {
       $("h2").empty();
       $("h3").empty();
       $("#text").empty();
-      // $("h1").append(person.title);
-      // $("h2").append(person.month);
-      // $("h3").append(pearson.speaker);
-      // $("#text").append(person.text);
+      $("#picture").empty();
       switchSpeaker(obj);
     });
   }
@@ -38,10 +35,7 @@ $(document).ready(function () {
       $("h2").empty();
       $("h3").empty();
       $("#text").empty();
-      // $("h1").append(person.title);
-      // $("h2").append(person.month);
-      // $("h3").append(pearson.speaker);
-      // $("#text").append(person.text);
+      $("#picture").empty();
       switchSpeaker(obj);
     });
   }
@@ -53,10 +47,7 @@ $(document).ready(function () {
       $("h2").empty();
       $("h3").empty();
       $("#text").empty();
-      // $("h1").append(person.title);
-      // $("h2").append(person.month);
-      // $("h3").append(pearson.speaker);
-      // $("#text").append(person.text);
+      $("#picture").empty();
       switchSpeaker(obj);
     });
   }
@@ -68,22 +59,16 @@ $(document).ready(function () {
       $("h2").empty();
       $("h3").empty();
       $("#text").empty();
-      // $("h1").append(person.title);
-      // $("h2").append(person.month);
-      // $("h3").append(pearson.speaker);
-      // $("#text").append(person.text);
+      $("#picture").empty();
       switchSpeaker(obj);
     });
   }
   function switchSpeaker(speakerPersons) {
-    // $("h1").empty();
-    // $("h2").empty();
-    // $("h3").empty();
-    // $("#text").empty();
     var person = speakerPersons.speakers[0];
     $("h1").append(person.title);
     $("h2").append(person.month);
     $("h3").append(person.speaker);
     $("#text").append(person.text);
+    $("#picture").append(person.image);
   }
 });
