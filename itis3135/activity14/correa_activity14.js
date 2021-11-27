@@ -47,7 +47,9 @@ $(document).ready(function () {
     $("h2").append(person.month);
     $("h3").append(person.speaker);
     $("#text").append(person.text);
-    document.getElementById("main_content").innerHTML = `<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt = "${person.speaker} picture">`;
+    $("main_content").append(`<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt = "${person.speaker} picture">`);
+
+    // document.getElementById("main_content").innerHTML = `<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt = "${person.speaker} picture">`;
 
     // .innerHTML = '<img src="https://webpages.uncc.edu/ncorream/itis3135/activity14/${person.image}" alt="${person.speaker}_picture" />';
   }
