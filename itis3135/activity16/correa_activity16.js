@@ -4,8 +4,8 @@ $(document).ready(function () {
     var html = "";
     $.each(data.items, function (i, item) {
       html += "<h2>" + item.title + "</h2>";
-      html += "<p>" + item.content + "</p>";
-      html += "<img src=" + item.media.m + ">";
+      //   html += "<p>" + item.content + "</p>";
+      html += "<a" + "<img src=" + item.media.m + ">" + "data-lightbox=" + "vectacorpbuilding" + ">" + "</a>";
     });
     $("#new_building").html(html);
   });
