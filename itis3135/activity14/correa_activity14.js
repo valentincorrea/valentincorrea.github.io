@@ -54,3 +54,22 @@ $(document).ready(function () {
     <p>${person.text}</p>`;
   }
 });
+
+// BETTER IMPLEMENTATION CODE
+$(document).ready(function () {
+  // SELECTING EACH OF THE LI IN THE NAV LIST
+  // SELECTING EACH A TAG BY THE TITLE AND THE APPENDING THE JSON EXTENTION
+  $("#nav_list a").click(function () {
+    var fileName = "json_files/" + $(this).attr("title") + ".json";
+    // CALLBACK FUNCTION THAT GET THE DATA FROM THE RESPONSE
+    $.getJSON(fileName, function (data) {
+      $.each(data, function () {
+        $each(this, function (key, value) {
+          // TO CLEAR OR EMTY THE VALUES WE CAN USE TEXT OR HTML
+          $("main").text("");
+          $("main").append("<h1>" + value.title + "</h1>" + "<img src= '" + value.image + " '>" + "<h2>" + value.month + "<br>" + value.speaker + "</h2>" + "<p>" + value.text + "</p>");
+        });
+      });
+    });
+  });
+});

@@ -8,14 +8,18 @@
     <script src="https://kit.fontawesome.com/cd41f3828a.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
+    <!-- FadeThis Plugin -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="scripts/dist/jquery.fadethis.min.js"></script>
+    <!-- FadeThis Plugin End -->
     <title>Pandas Tutorials | Installation</title>
   </head>
   <body>
     <div class="hero-section">
       <div id="hero"></div>
       <div class="hero-text">
-        <h1>Taylor Ramsey</h1>
-        <h2>Introduction to Python & Pandas</h2>
+        <h1 class="slide-top">Taylor Ramsey</h1>
+        <h2 class="slide-top">Introduction to Python & Pandas</h2>
         <!-- <div class="social-icons">
           <a href="https://www.linkedin.com/in/valentincorrea/" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/valentincorrea" target="_blank"><i class="fab fa-github-square"></i></a>
@@ -24,11 +28,11 @@
     </div>
     <main>
       <div class="section">
-        <header><h2 class="accent">Installation</h2></header>
+        <header class="slide-top"><h2 class="accent">Installation</h2></header>
       </div>
       <div class="card">
         <div class="section">
-          <h3>Installation</h3>
+          <h3 class="slide-top">Installation</h3>
           <p>
             The easiest way to install pandas is to install it as part of the Anaconda distribution, a cross platform distribution for data analysis and scientific computing. This is the recommended installation method for most users. Instructions
             for installing from source, PyPI, ActivePython, various Linux distributions, or a development version are also provided.
@@ -47,7 +51,7 @@
       </div>
       <div class="card">
         <div class="section">
-          <h3>Installing with Anaconda</h3>
+          <h3 class="slide-top">Installing with Anaconda</h3>
           <p>
             Installing pandas and the rest of the NumPy and SciPy stack can be a little difficult for inexperienced users. The simplest way to install not only pandas, but Python and the most popular packages that make up the SciPy stack (IPython,
             NumPy, Matplotlib, …) is with Anaconda, a cross-platform (Linux, macOS, Windows) Python distribution for data analytics and scientific computing. After running the installer, the user will have access to pandas and the rest of the SciPy
@@ -71,6 +75,10 @@
         >
       </div>
     </main>
+    <!-- The script tag animates the fade down text -->
+    <script>
+      $(window).fadeThis({ speed: 1000 });
+    </script>
     <footer>
       <div id="my-footer"></div>
     </footer>

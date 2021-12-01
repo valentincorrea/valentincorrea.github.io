@@ -8,14 +8,18 @@
     <script src="https://kit.fontawesome.com/cd41f3828a.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
+    <!-- FadeThis Plugin -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="scripts/dist/jquery.fadethis.min.js"></script>
+    <!-- FadeThis Plugin End -->
     <title>Pandas Tutorials | Subscribe</title>
   </head>
   <body>
     <div class="hero-section">
       <div id="hero"></div>
       <div class="hero-text">
-        <h1>Taylor Ramsey</h1>
-        <h2>Introduction to Python & Pandas</h2>
+        <h1 class="slide-top">Taylor Ramsey</h1>
+        <h2 class="slide-top">Introduction to Python & Pandas</h2>
         <!-- <div class="social-icons">
           <a href="https://www.linkedin.com/in/valentincorrea/" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/valentincorrea" target="_blank"><i class="fab fa-github-square"></i></a>
@@ -24,12 +28,12 @@
     </div>
     <main>
       <div class="section">
-        <header><h2 class="accent">Subscribe</h2></header>
+        <header class="slide-top"><h2 class="accent">Subscribe</h2></header>
       </div>
       <div id="information-box"></div>
       <div class="card">
         <div class="section">
-          <h3>If you found these tutorials helpful, please consider subscribing to our newsletter.</h3>
+          <h3 class="slide-top">If you found these tutorials helpful, please consider subscribing to our newsletter.</h3>
           <p>
             Email:<a href="mailto:info@vanishedchameleondesign.com"></a>
             info@vanishedchameleondesign.com
@@ -70,6 +74,10 @@
         >
       </div>
     </main>
+    <!-- The script tag animates the fade down text -->
+    <script>
+      $(window).fadeThis({ speed: 1000 });
+    </script>
     <footer>
       <div id="my-footer"></div>
     </footer>
