@@ -3,7 +3,7 @@ $(document).ready(function () {
     type: "get",
     url: "facultyList.json",
     beforeSend: function () {
-      $("#team").html("Loading...");
+      $("#faculty").html("Loading...");
     },
     timeout: 10000,
     error: function (xhr, status, error) {
@@ -11,10 +11,10 @@ $(document).ready(function () {
     },
     dataType: "json",
     success: function (data) {
-      $("faculty").html("");
+      $("#faculty").html("");
       $.each(data, function () {
         $.each(this, function (key, value) {
-          $("#faculty").append("<img src= '" + value.image + " '>" + "<br>" + "<h2>" + value.full_name + "</h2>" + "<h3>" + value.department + "</h3>" + "<p>" + value.bio + "</p>");
+          $("#faculty").append("<img src= '" + value.image + " '>" + "<h2>" + value.full_name + "</h2>" + "<h3>" + value.department + "</h3>" + "<p>" + value.bio + "</p>");
         });
       });
     },
