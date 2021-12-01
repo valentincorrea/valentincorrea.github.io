@@ -5,7 +5,7 @@ $(document).ready(function () {
     $.each(data.items, function (i, item) {
       html += "<h2>" + item.title + "</h2>";
       html += "<p>" + item.content + "</p>";
-      html += "<a>" + "<img src=" + item.media.m + ">" + "</a>";
+      //   html += "<a>" + "<img src=" + item.media.m + ">" + "</a>";
       html += "<a href=" + item.media.m + "data-lightbox=new_building" > +"</a>";
       //   html += "<img src=" + item.media.m + ">";
     });
