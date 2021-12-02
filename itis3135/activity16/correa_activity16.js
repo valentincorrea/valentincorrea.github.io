@@ -4,7 +4,7 @@ $(document).ready(function () {
     var html = "";
     $.each(data.items, function (i, item) {
       //   html += "<a data-lightbox='roadtrip'>" + "<img src=" + item.media.m + ">" + "</a>";
-      html += "<a href='item.media.m' data-lightbox='roadtrip'>" + "<img src=" + item.media.m + ">" + "</a>";
+      html += "<a href='item.media.m' data-lightbox='new_building'>" + item.title + "<img src=" + item.media.m + ">" + "</a>";
     });
     $("#new_building").html(html);
   });
