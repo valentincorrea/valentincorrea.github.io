@@ -4,9 +4,7 @@ $(document).ready(function () {
     var lightbox = document.getElementById("new_building");
     $.each(data.items, function (i, item) {
       //   html += "<a data-lightbox='new_building'>" + "<img src=" + item.media.m + ">" + "</a>";
-      lightbox.innerHTML += '<a href="${item.media.m}" data-lightbox="new_building" data-title="${item.title}"> <img src="$(item.media.m}"></a>';
-      //   lightbox.innerHTML += "<a href='item.media.m' data-lightbox='new_building' data-tittle='item.title'>" + "<img src=" + item.media.m + ">" + "</a>";
-      //   lightbox += '<a href="${item.media.m}" data-lightbox="new_building" data-title="${item.title}"> <img src="$(item.media.m}"></a>';
+      lightbox += "<a data-lightbox='new_building'>" + "<img src=" + item.media.m + ">" + "</a>";
     });
     // $("#new_building").html(lightbox);
   });
