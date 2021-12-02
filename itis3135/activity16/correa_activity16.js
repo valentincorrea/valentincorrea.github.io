@@ -3,7 +3,8 @@ $(document).ready(function () {
   $.getJSON(url, function (data) {
     var html = "";
     $.each(data.items, function (i, item) {
-      html += "<a data-lightbox='new_building'>" + "<img src=" + item.media.m + ">" + "</a>";
+      //   html += "<a data-lightbox='new_building'>" + "<img src=" + item.media.m + ">" + "</a>";
+      html.innerHTML += '<a href="${item.media.m}" data-lightbox="new_building" data-title="${item.title}"> <img src="$(item.media.m}"></a>';
     });
     $("#new_building").html(html);
   });
