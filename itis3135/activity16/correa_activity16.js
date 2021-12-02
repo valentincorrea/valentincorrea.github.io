@@ -3,8 +3,8 @@ $(document).ready(function () {
   $.getJSON(url, function (data) {
     var html = "";
     $.each(data.items, function (i, item) {
-      //   html += "<a>" + "<img src=" + item.media.m + ">" + "</a>";
-      html += "<a data-lightbox='roadtrip'>" + "<img src=" + item.media.m + ">" + "</a>";
+      //   html += "<a data-lightbox='roadtrip'>" + "<img src=" + item.media.m + ">" + "</a>";
+      html += "<a href='item.media.m' data-lightbox='roadtrip'>" + "<img src=" + item.media.m + ">" + "</a>";
     });
     $("#new_building").html(html);
   });
