@@ -7,12 +7,13 @@ $(document).ready(function () {
     const lastName = document.getElementById("last-name").value;
     const telephoneNumber = document.getElementById("telephone").value;
     const emailAddress = document.getElementById("email").value;
+    console.log("Button press");
 
     if (!firstName || !lastName || !telephoneNumber || !emailAddress) {
       alert("You forgot to fill all the boxes");
       return;
     }
-    console.log("Button press");
+
     const container = document.getElementById("information-box");
     const informationContainer = document.createElement("div");
     informationContainer.classList.add("card");
@@ -33,6 +34,7 @@ $(document).ready(function () {
     userName.innerHTML = "First Name: " + firstName + " " + lastName;
     userEmail.innerHTML = "Email: " + emailAddress;
     userTelephone.innerHTML = "Telephone: " + telephoneNumber;
+    alert("Submitted");
   });
 });
 
