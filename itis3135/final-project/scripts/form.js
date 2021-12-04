@@ -2,8 +2,7 @@
 // THIS FUNCTION TAKES THE USER'S INFORMATION AND
 // DISPLAYS THE INFORMATION ON TOP OF THE CONTACT FORM
 // $(document).ready(function () {
-function submitForm() {}
-{
+function submitForm() {
   const firstName = document.getElementById("first-name").value;
   const lastName = document.getElementById("last-name").value;
   const telephoneNumber = document.getElementById("telephone").value;
