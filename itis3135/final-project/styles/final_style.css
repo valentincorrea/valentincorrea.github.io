@@ -239,6 +239,16 @@ iframe {
   display: flex;
 }
 
+#information-box {
+  position: absolute;
+  background-color: #6ce26c;
+  z-index: 1;
+}
+#information-box div {
+  background-color: #f1f1f1;
+  padding: 10%;
+}
+
 /* CARD DIV */
 .card {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

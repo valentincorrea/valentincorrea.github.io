@@ -118,7 +118,12 @@
 
             // Triggering bPopup when click event is fired
             $("#information-box").bPopup({
-              autoClose: 2000, //Auto closes after 2000ms/2sec
+              easing: "easeOutBack", //uses jQuery easing plugin
+              speed: 450,
+              transition: "slideDown",
+              zIndex: 1,
+              modalClose: true,
+              autoClose: 3000, //Auto closes after 1000ms/1sec
             });
           });
         });

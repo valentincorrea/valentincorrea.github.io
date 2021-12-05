@@ -15,12 +15,15 @@ function submitForm() {
   }
 
   const containerForm = document.getElementById("information-box");
+  // Empty the div
+
   const informationContainer = document.createElement("div");
   informationContainer.classList.add("card");
   const userInformation = document.createElement("h4");
   const userName = document.createElement("h4");
   const userEmail = document.createElement("p");
   const userTelephone = document.createElement("p");
+  containerForm.innerHTML = "";
 
   //   // APPENDING THE INFORMATION
   containerForm.appendChild(informationContainer);
@@ -31,7 +34,7 @@ function submitForm() {
 
   //   // Appending the content
   // userName.innerHTML = "Hi " + firstName + " " + lastName;
-  userInformation.innerHTML = "Hi " + firstName + " " + lastName + "! Thank you for being a valuable member";
+  userInformation.innerHTML = "Hi " + firstName + " " + lastName + "!" + "<br>" + "Thank you for being a valuable member";
 
   // userEmail.innerHTML = "Email: " + emailAddress;
   // userTelephone.innerHTML = "Telephone: " + telephoneNumber;
