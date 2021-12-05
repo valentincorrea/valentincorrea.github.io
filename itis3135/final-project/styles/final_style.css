@@ -238,7 +238,7 @@ iframe {
   height: auto;
   display: flex;
 }
-
+/* MODAL WINDOW PLUGIN*/
 #information-box {
   position: absolute;
   background-color: #6ce26c;
@@ -248,6 +248,14 @@ iframe {
   background-color: #f1f1f1;
   padding: 10%;
 }
+/* MODAL WINDOW PLUGIN END */
+
+/* ACCORDION UI WIDGET */
+.accordion-drop-down {
+  background: rgb(1, 18, 45);
+  background: linear-gradient(135deg, rgba(1, 18, 45, 1) 0%, rgba(4, 81, 146, 1) 45%, rgba(9, 128, 166, 1) 100%);
+}
+/* ACCORDION UI WIDGET END*/
 
 /* CARD DIV */
 .card {
