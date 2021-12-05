@@ -17,8 +17,8 @@ function submitForm() {
   const containerForm = document.getElementById("information-box");
   const informationContainer = document.createElement("div");
   informationContainer.classList.add("card");
-  const userInformation = document.createElement("h3");
-  const userName = document.createElement("p");
+  const userInformation = document.createElement("h4");
+  const userName = document.createElement("h4");
   const userEmail = document.createElement("p");
   const userTelephone = document.createElement("p");
 
@@ -30,11 +30,11 @@ function submitForm() {
   informationContainer.appendChild(userTelephone);
 
   //   // Appending the content
-  userInformation.innerHTML = "Thank you for being a valuable member";
-  userName.innerHTML = "First Name: " + firstName + " " + lastName;
-  userEmail.innerHTML = "Email: " + emailAddress;
-  userTelephone.innerHTML = "Telephone: " + telephoneNumber;
-  alert("Submitted");
+  // userName.innerHTML = "Hi " + firstName + " " + lastName;
+  userInformation.innerHTML = "Hi " + firstName + " " + lastName + "! Thank you for being a valuable member";
+
+  // userEmail.innerHTML = "Email: " + emailAddress;
+  // userTelephone.innerHTML = "Telephone: " + telephoneNumber;
   document.getElementById("first-name").value = "";
   document.getElementById("last-name").value = "";
   document.getElementById("telephone").value = "";

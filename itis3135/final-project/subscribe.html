@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles/final_style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/script.js"></script>
     <!-- FADETHIS PLUGIN -->
     <link href="jquery-ui-1.13.0/jquery-ui.css" rel="stylesheet" type="text/css" />
     <link href="jquery-ui-1.13.0/jquery-ui.structure.css" rel="stylesheet" type="text/css" />
@@ -13,6 +14,7 @@
     <script src="https://kit.fontawesome.com/cd41f3828a.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <script src="scripts/form.js"></script>
     <!-- JQUERY ACCORDION WIDGET -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
@@ -23,14 +25,6 @@
     <!-- JQUERY ACCORDION WIDGET END -->
     <script src="scripts/accordion.js"></script>
     <script src="scripts/dist/jquery.fadethis.min.js"></script>
-
-    <!-- Custombox Plugin Start -->
-    <!-- <link href="custombox-4.0.3/dist/custombox.min.css" rel="stylesheet" />
-    <script src="custombox-4.0.3/dist/custombox.min.js"></script>
-    <script src="custombox-4.0.3/dist/custombox.legacy.min.js"></script> -->
-    <!-- Custombox Plugin End -->
-
-    <!-- FadeThis Plugin End -->
     <title>Pandas Tutorials | Subscribe</title>
   </head>
   <body>
@@ -87,7 +81,7 @@
             <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
             <br />
             <br />
-            <button type="button" class="form-button" value="submit-form" onclick="submitForm()">Submit</button>
+            <button type="button" class="form-button" value="submit-form" id="my-button" onclick="submitForm()">Submit</button>
             <!-- <button type="button" class="form-button" value="submit-form">Submit</button> -->
           </form>
         </div>
@@ -110,5 +104,27 @@
     <footer>
       <div id="my-footer"></div>
     </footer>
+    <script>
+      // jQuery modal popup plugin
+      (function ($) {
+        // DOM Ready
+        $(function () {
+          // Binding a click event
+          // From jQuery v.1.7.0 use .on() instead of .bind()
+          $("#my-button").bind("click", function (e) {
+            // Prevents the default action to be triggered.
+            e.preventDefault();
+
+            // Triggering bPopup when click event is fired
+            $("#information-box").bPopup({
+              autoClose: 2000, //Auto closes after 2000ms/2sec
+            });
+          });
+        });
+      })(jQuery);
+    </script>
   </body>
+  <!-- jQuery modal popup plugin -->
+  <script src="scripts/jquery.bpopup.min.js"></script>
+  <!-- jQuery modal popup plugin end -->
 </html>
