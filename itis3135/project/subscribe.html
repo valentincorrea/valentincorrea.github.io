@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="styles/final_style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FADETHIS PLUGIN -->
+    <link href="jquery-ui-1.13.0/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="jquery-ui-1.13.0/jquery-ui.structure.css" rel="stylesheet" type="text/css" />
+    <link href="jquery-ui-1.13.0/jquery-ui.theme.css" rel="stylesheet" type="text/css" />
+    <!-- FADETHIS PLUGIN END-->
+    <script src="https://kit.fontawesome.com/cd41f3828a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+
+    <script src="scripts/form.js"></script>
+    <!-- JQUERY ACCORDION WIDGET https://api.jqueryui.com/accordion/ -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-ui-1.13.0/jquery-ui.js" type="text/javascript"></script>
+    <!-- JQUERY ACCORDION WIDGET END -->
+    <script src="scripts/accordion.js"></script>
+    <script src="scripts/dist/jquery.fadethis.min.js"></script>
+    <title>Pandas Tutorials | Subscribe</title>
+  </head>
+  <body>
+    <div class="hero-section">
+      <div id="hero"></div>
+      <div class="hero-text">
+        <h1 class="slide-top">Taylor Ramsey</h1>
+        <h2 class="slide-top">Introduction to Python & Pandas</h2>
+      </div>
+    </div>
+    <main>
+      <div class="section">
+        <header class="slide-top"><h2 class="accent">Subscribe</h2></header>
+      </div>
+      <div class="section">
+        <div id="accordion">
+          <h3 class="accordion-drop-down">Why I should subscribe?</h3>
+          <div>You will receive an email everityme new content is created</div>
+          <h3>Do you keep my email private</h3>
+          <div>Your email is only been use for notifying user whe new content has been added</div>
+          <h3>Can I unsubcribe at any time</h3>
+          <div>Yes, you can unsubscribe whenever you wish</div>
+        </div>
+      </div>
+
+      <div id="information-box"></div>
+      <div class="card">
+        <div class="section">
+          <h3 class="slide-top">If you found these tutorials helpful, please consider subscribing to our newsletter.</h3>
+          <p>
+            Email:<a href="mailto:info@vanishedchameleondesign.com"></a>
+            info@vanishedchameleondesign.com
+          </p>
+          <p>Phone:<a href="tel:+18001234765"></a> 800-1234-765</p>
+          <p>Address:<a href="#"></a> 735 Mill Pond Street Bridgeport, CT 06606</p>
+          <br />
+
+          <br />
+          <form action="#">
+            <label for="first-name">First Name<span class="required-fields">*</span></label>
+            <br />
+            <input type="text" id="first-name" name="firstName" placeholder="First Name" required />
+            <br />
+            <label for="last-name">Last Name<span class="required-fields">*</span></label>
+            <br />
+            <input type="text" id="last-name" name="lastName" placeholder="Last Name" required />
+            <br />
+            <label for="telephone">Telephone<span class="required-fields">*</span></label>
+            <br />
+            <input type="tel" id="telephone" name="phone" placeholder="xxx-xxx-xxxx" required />
+            <br />
+            <label for="email">Email<span class="required-fields">*</span></label>
+            <br />
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+            <br />
+            <br />
+            <button type="button" class="form-button" value="submit-form" id="my-button" onclick="submitForm()">Submit</button>
+            <!-- <button type="button" class="form-button" value="submit-form">Submit</button> -->
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fncorream%2Fitis3135%2Ffinal-project%2Fforum.html" target="_blank" class="fake-button">HTML Validation</a>
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fncorream%2Fitis3135%2Ffinal-project%2Fsubscribe.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"
+          target="_blank"
+          class="fake-button"
+          >CSS Validation</a
+        >
+      </div>
+    </main>
+
+    <!-- The script tag animates the fade down text -->
+    <!-- file:///Users/valentincorrea/Downloads/jquery-fadethis-master/demo/index.html by lwiesel. -->
+    <script>
+      $(window).fadeThis({ speed: 1000 });
+    </script>
+    <footer>
+      <div id="my-footer"></div>
+    </footer>
+    <script>
+      // jQuery modal popup plugin
+      // https://plugins.jquery.com/bpopup/ -- Bjorn Klinggaard
+      (function ($) {
+        // DOM Ready
+        $(function () {
+          // Binding a click event
+          // From jQuery v.1.7.0 use .on() instead of .bind()
+          $("#my-button").bind("click", function (e) {
+            // Prevents the default action to be triggered.
+            e.preventDefault();
+
+            // Triggering bPopup when click event is fired
+            $("#information-box").bPopup({
+              easing: "easeOutBack", //uses jQuery easing plugin
+              speed: 450,
+              transition: "slideDown",
+              zIndex: 1,
+              modalClose: true,
+              autoClose: 3000, //Auto closes after 1000ms/1sec
+            });
+          });
+        });
+      })(jQuery);
+    </script>
+  </body>
+  <!-- jQuery modal popup plugin -->
+  <script src="scripts/jquery.bpopup.min.js"></script>
+  <!-- jQuery modal popup plugin end -->
+</html>

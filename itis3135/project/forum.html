@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="styles/final_style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/cd41f3828a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/forum.js"></script>
+    <!-- FadeThis Plugin  https://github.com/lwiesel/jquery-fadethis -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="scripts/dist/jquery.fadethis.min.js"></script>
+    <!-- FadeThis Plugin End -->
+    <title>Pandas Tutorials | Forum</title>
+  </head>
+  <body>
+    <div class="hero-section">
+      <div id="hero"></div>
+      <div class="hero-text">
+        <h1 class="slide-top">Taylor Ramsey</h1>
+        <h2 class="slide-top">Introduction to Python & Pandas</h2>
+        <!-- <div class="social-icons">
+          <a href="https://www.linkedin.com/in/valentincorrea/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/valentincorrea" target="_blank"><i class="fab fa-github-square"></i></a>
+        </div> -->
+      </div>
+    </div>
+    <main>
+      <div class="section">
+        <header class="slide-top"><h2 class="accent">Forum</h2></header>
+      </div>
+      <div class="card">
+        <div class="section">
+          <h4 class="slide-top">Why Pytho and Pandas are good for Data Science?</h4>
+          <p>Python is a good chose for Machine Learnig, neural networks, and most things involving Pandas and NumPy</p>
+          <p class="accent">Credits to: https://python-forum.io/</p>
+          <br />
+          <div id="comment-box"></div>
+        </div>
+        <form action="#">
+          <label for="user-name">User Name<span class="required-fields">*</span></label>
+          <br />
+          <input type="text" id="user-name" name="userName" placeholder="User Name" required />
+          <br />
+          <br />
+          <label for="comment">Comment</label>
+          <br />
+          <textarea name="comment" id="comment" cols="90" rows="5"></textarea>
+          <br />
+          <br />
+          <br />
+          <button type="button" class="fake-button" value="submit-forum" onclick="postComment()">Post your comment</button>
+          <br />
+        </form>
+        <br />
+      </div>
+      <div class="container">
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fncorream%2Fitis3135%2Ffinal-project%2Fforum.html" target="_blank" class="fake-button">HTML Validation</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fncorream%2Fitis3135%2Ffinal-project%2Fforum.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank" class="fake-button"
+          >CSS Validation</a
+        >
+      </div>
+    </main>
+    <!-- The script tag animates the fade down text -->
+    <script>
+      $(window).fadeThis({ speed: 1000 });
+    </script>
+    <footer>
+      <div id="my-footer"></div>
+    </footer>
+  </body>
+</html>
