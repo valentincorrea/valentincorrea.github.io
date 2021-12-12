@@ -382,6 +382,12 @@ footer a:hover {
     display: flex;
     flex-direction: column;
   }
+  .nav-list {
+    margin-bottom: 3%;
+  }
+  .hero-text {
+    margin-top: 4%;
+  }
   .section {
     width: 90%;
   }
@@ -400,6 +406,13 @@ footer a:hover {
     width: 40%;
     display: flex;
   }
+  .nav-list {
+    margin-bottom: 3%;
+  }
+
+  .hero-text {
+    margin-top: 4%;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -414,6 +427,14 @@ footer a:hover {
     width: 90%;
     display: flex;
   }
+  .nav-list {
+    margin-bottom: 8%;
+  }
+
+  .hero-text {
+    margin-top: 4%;
+  }
+
   .center-div {
     width: 90%;
     text-align: left;
