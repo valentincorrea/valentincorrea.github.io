@@ -377,6 +377,9 @@ footer a:hover {
 /* ADDING REPONSIVE MEDIA QUERIES */
 
 @media screen and (max-width: 1200px) {
+  .hero-section {
+    height: 60vh;
+  }
   .box {
     width: 40%;
     display: flex;
@@ -402,6 +405,9 @@ footer a:hover {
   }
 }
 @media screen and (max-width: 1000px) {
+  .hero-section {
+    height: 70vh;
+  }
   .box {
     width: 40%;
     display: flex;
@@ -423,6 +429,9 @@ footer a:hover {
 }
 
 @media screen and (max-width: 900px) {
+  .hero-section {
+    height: 70vh;
+  }
   .box {
     width: 90%;
     display: flex;
@@ -474,6 +483,9 @@ footer a:hover {
 }
 
 @media screen and (max-width: 650px) {
+  .hero-section {
+    height: 80vh;
+  }
   .box {
     width: 90%;
     display: flex;
