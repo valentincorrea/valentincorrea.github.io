@@ -264,8 +264,35 @@ iframe {
 /* MODAL WINDOW PLUGIN END */
 
 /* ACCORDION UI WIDGET */
-
+#accordion {
+  width: 90%;
+  height: auto;
+  margin: 0 5% 0 0;
+}
 /* ACCORDION UI WIDGET END*/
+
+/* active users table */
+table {
+  font-family: Helvetica, sans-serif, serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #d3d3d3;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+table td {
+  font-size: large;
+  padding-top: 1.5rem;
+}
 
 /* CARD DIV */
 .card {
@@ -438,6 +465,12 @@ footer a:hover {
   }
   .nav-list {
     margin-bottom: 8%;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: flex-start;
+    margin: -10px;
+    z-index: 1;
   }
 
   .hero-text {

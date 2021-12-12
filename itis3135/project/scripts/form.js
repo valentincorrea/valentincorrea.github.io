@@ -1,18 +1,23 @@
-// Accordion Jquery UI
-// THIS FUNCTION TAKES THE USER'S INFORMATION AND
-// DISPLAYS THE INFORMATION ON TOP OF THE CONTACT FORM
+// ACCORDION UI WIDGET
+
 // $(document).ready(function () {
 function submitForm() {
   const firstName = document.getElementById("first-name").value;
   const lastName = document.getElementById("last-name").value;
-  const telephoneNumber = document.getElementById("telephone").value;
+  // const telephoneNumber = document.getElementById("telephone").value;
   const emailAddress = document.getElementById("email").value;
-  console.log("Button press");
+  // console.log("Button press");
 
-  if (!firstName || !lastName || !telephoneNumber || !emailAddress) {
+  if (!firstName || !lastName || !emailAddress) {
     alert("You forgot to fill all the boxes");
     return;
   }
+  // THE TELOPHONE NUMBER DOES NOT HAVE A MEANINFUL PURPOSE FOR THIS FORM
+  // THEREFORE IT HAS BEEN COMMENTED THROUGH THE FORM.JS AND SUBSCRIBE.HTML FILES
+  // if (!firstName || !lastName || !telephoneNumber || !emailAddress) {
+  //   alert("You forgot to fill all the boxes");
+  //   return;
+  // }
 
   const containerForm = document.getElementById("information-box");
   // Empty the div
@@ -22,7 +27,7 @@ function submitForm() {
   const userInformation = document.createElement("h4");
   const userName = document.createElement("h4");
   const userEmail = document.createElement("p");
-  const userTelephone = document.createElement("p");
+  // const userTelephone = document.createElement("p");
   containerForm.innerHTML = "";
 
   //   // APPENDING THE INFORMATION
@@ -30,7 +35,7 @@ function submitForm() {
   informationContainer.appendChild(userInformation);
   informationContainer.appendChild(userName);
   informationContainer.appendChild(userEmail);
-  informationContainer.appendChild(userTelephone);
+  // informationContainer.appendChild(userTelephone);
 
   //   // Appending the content
   // userName.innerHTML = "Hi " + firstName + " " + lastName;
@@ -40,10 +45,14 @@ function submitForm() {
   // userTelephone.innerHTML = "Telephone: " + telephoneNumber;
   document.getElementById("first-name").value = "";
   document.getElementById("last-name").value = "";
-  document.getElementById("telephone").value = "";
+  // document.getElementById("telephone").value = "";
   document.getElementById("email").value = "";
 }
 // });
+
+// THIS FUNCTION TAKES THE USER'S INFORMATION AND
+// DISPLAYS THE INFORMATION ON TOP OF THE CONTACT FORM
+// BUT IS HAS BEEN REPLACED BY THE CODE ABOVE.
 
 // function displayUserInformation() {
 //   const firstName = document.getElementById("first-name").value;
