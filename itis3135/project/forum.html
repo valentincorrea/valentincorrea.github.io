@@ -44,11 +44,18 @@
       </div>
       <div class="card">
         <div class="section">
-          <h4 class="slide-top">Why Pytho and Pandas are good for Data Science?</h4>
+          <div id="users-comments">
+            <h4></h4>
+            <h5></h5>
+            <p></p>
+          </div>
+
+          <!-- Uncpmment or remove  before submit -->
+          <!-- <h4 class="slide-top">Why Pytho and Pandas are good for Data Science?</h4>
           <p>Python is a good chose for Machine Learnig, neural networks, and most things involving Pandas and NumPy</p>
-          <p class="accent">Credits to: https://python-forum.io/</p>
+          <p class="accent">Credits to: https://python-forum.io/</p> -->
           <!-- RATING PLUGIN -->
-          <select id="example">
+          <select id="user-rating">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -56,24 +63,26 @@
             <option value="5">5</option>
           </select>
           <!-- RATING PLUGIN END -->
-          <div id="comment-box"></div>
+          <hr />
+          <div id="comment-box">
+            <div id="rating-section"></div>
+          </div>
+
+          <form action="#">
+            <label for="user-name">Username<span class="required-fields">*</span></label>
+            <br />
+            <input type="text" id="user-name" name="userName" placeholder="User Name" required />
+            <br />
+            <br />
+            <label for="comment">Comment</label>
+            <br />
+            <textarea name="comment" id="comment" cols="90" rows="5"></textarea>
+            <br />
+            <button type="button" class="fake-button" value="submit-forum" onclick="postComment()">Post your comment</button>
+            <br />
+          </form>
+          <br />
         </div>
-        <form action="#">
-          <label for="user-name">User Name<span class="required-fields">*</span></label>
-          <br />
-          <input type="text" id="user-name" name="userName" placeholder="User Name" required />
-          <br />
-          <br />
-          <label for="comment">Comment</label>
-          <br />
-          <textarea name="comment" id="comment" cols="90" rows="5"></textarea>
-          <br />
-          <br />
-          <br />
-          <button type="button" class="fake-button" value="submit-forum" onclick="postComment()">Post your comment</button>
-          <br />
-        </form>
-        <br />
       </div>
       <!-- The container Div is used for validation buttons only -->
       <div class="container">

@@ -289,7 +289,8 @@ iframe {
 /* CARD DIV END */
 
 input,
-label {
+label,
+textarea {
   font-family: Helvetica, sans-serif, serif;
   margin: 1rem;
   width: 60%;
@@ -297,6 +298,12 @@ label {
 
 input {
   padding: 0.7rem;
+}
+
+/* BUTTON */
+button {
+  font-family: Helvetica, sans-serif, serif;
+  margin: 1rem;
 }
 
 /* THREE COLUMNS LAYOUT */
