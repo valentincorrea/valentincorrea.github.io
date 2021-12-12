@@ -27,7 +27,7 @@ $(document).ready(function () {
               value.comment +
               "</p>" +
               "<select" +
-              "$('.users-comments')" +
+              "class='users-comments'" +
               ">" +
               "<option value='1'>" +
               "1" +
