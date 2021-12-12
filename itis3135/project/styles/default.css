@@ -574,3 +574,63 @@ footer a:hover {
     flex: 60%;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .hero-section {
+    height: 90vh;
+  }
+  .box {
+    width: 90%;
+    display: flex;
+  }
+  .nav-list {
+    margin-bottom: 15%;
+  }
+
+  .hero-text {
+    margin-top: 25%;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: flex-start;
+    margin: -10px;
+    z-index: 1;
+  }
+
+  .center-div {
+    width: 90%;
+    text-align: left;
+    margin-left: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .fake-button {
+    margin: 1rem 0;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .social-icons {
+    width: 60%;
+  }
+  .columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5% 0;
+  }
+  .column {
+    flex: 60%;
+  }
+}
