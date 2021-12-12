@@ -27,11 +27,16 @@ $(document).ready(function () {
               value.comment +
               "</p>" +
               "<select id='user-rating'>" +
-              "<option value='1'" +
-              "<option value='2'" +
-              "<option value='3'" +
-              "<option value='4'" +
-              "<option value='5'" +
+              "<option value='1'>" +
+              "<option>" +
+              "<option value='2'>" +
+              "<option>" +
+              "<option value='3'>" +
+              "<option>" +
+              "<option value='4'>" +
+              "<option>" +
+              "<option value='5'>" +
+              "<option>" +
               "</select>"
           );
         });
