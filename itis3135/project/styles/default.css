@@ -490,6 +490,14 @@ footer a:hover {
     width: 90%;
     display: flex;
   }
+  .nav-list {
+    margin-bottom: 15%;
+  }
+
+  .hero-text {
+    margin-top: 15%;
+  }
+
   .center-div {
     width: 90%;
     text-align: left;
