@@ -530,6 +530,12 @@ footer a:hover {
   .hero-text {
     margin-top: 15%;
   }
+  .nav-list {
+    display: flex;
+    justify-content: flex-start;
+    margin: -10px;
+    z-index: 1;
+  }
 
   .center-div {
     width: 90%;
