@@ -517,7 +517,7 @@ footer a:hover {
 
 @media screen and (max-width: 650px) {
   .hero-section {
-    height: 80vh;
+    height: 90vh;
   }
   .box {
     width: 90%;
@@ -528,7 +528,7 @@ footer a:hover {
   }
 
   .hero-text {
-    margin-top: 15%;
+    margin-top: 25%;
   }
   .nav-list {
     display: flex;
@@ -552,13 +552,13 @@ footer a:hover {
   }
 
   h1 {
-    font-size: 3.5rem;
-  }
-  h2 {
     font-size: 2.5rem;
   }
-  h3 {
+  h2 {
     font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
   }
   .social-icons {
     width: 60%;
