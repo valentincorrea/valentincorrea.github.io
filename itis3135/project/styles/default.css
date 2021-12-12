@@ -239,7 +239,7 @@ iframe {
 .container {
   height: auto;
   margin: 0 auto 5% auto;
-  width: 30%;
+  width: 40%;
 
   display: flex;
   align-items: center;
@@ -382,11 +382,30 @@ footer a:hover {
     display: flex;
     flex-direction: column;
   }
+  .section {
+    width: 90%;
+  }
+  .section img {
+    width: 90%;
+  }
+  .section p {
+    width: 80%;
+  }
+  iframe {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 1000px) {
   .box {
     width: 40%;
     display: flex;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .fake-button {
+    margin: 1rem 0;
   }
 }
 
@@ -400,6 +419,58 @@ footer a:hover {
     text-align: left;
     margin-left: auto;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .fake-button {
+    margin: 1rem 0;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .social-icons {
+    width: 60%;
+  }
+  .columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5% 0;
+  }
+  .column {
+    flex: 60%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .box {
+    width: 90%;
+    display: flex;
+  }
+  .center-div {
+    width: 90%;
+    text-align: left;
+    margin-left: auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .fake-button {
+    margin: 1rem 0;
+  }
+
   h1 {
     font-size: 3.5rem;
   }
