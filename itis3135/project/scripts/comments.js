@@ -14,7 +14,7 @@ $(document).ready(function () {
       $("#users-comments").html("");
       $.each(data, function () {
         $.each(this, function (key, value) {
-          $("#users-comments").append("<h4>" + value.title + "</h4>" + "<h5>" + "@" + value.user_name + "</h5>" + "<p>" + value.comment + "</p>");
+          $("#users-comments").append("<h4>" + value.title + "</h4>" + "<h5>" + "@" + value.user_name + "</h5>" + "<p>" + value.comment + "</p>" + "<br>" + "<hr>");
         });
       });
     },
