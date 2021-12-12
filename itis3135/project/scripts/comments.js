@@ -3,7 +3,7 @@ $(document).ready(function () {
     type: "get",
     url: "posts.json",
     beforeSend: function () {
-      $("#users-comments").html("Loading...");
+      $(".users-comments").html("Loading...");
     },
     timeout: 10000,
     error: function (xhr, status, error) {
@@ -11,11 +11,11 @@ $(document).ready(function () {
     },
     dataType: "json",
     success: function (data) {
-      $("#users-comments").html("");
+      $(".users-comments").html("");
       $.each(data, function () {
         $.each(this, function (key, value) {
           //   $("#users-comments").append("<h4>" + value.title + "</h4>" + "<h5>" + "@" + value.user_name + "</h5>" + "<p>" + value.comment + "</p>" + "<br>" + "<hr>");
-          $("#users-comments").append(
+          $(".users-comments").append(
             "<h4>" +
               value.title +
               "</h4>" +
@@ -26,7 +26,9 @@ $(document).ready(function () {
               "<p>" +
               value.comment +
               "</p>" +
-              "<select id='user-rating'>" +
+              "<select" +
+              "$('.users-comments')" +
+              ">" +
               "<option value='1'>" +
               "1" +
               "<option>" +
