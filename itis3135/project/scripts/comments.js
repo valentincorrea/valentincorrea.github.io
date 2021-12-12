@@ -26,7 +26,7 @@ $(document).ready(function () {
               "<p>" +
               value.comment +
               "</p>" +
-              "<select id='user-rating'" +
+              "<select id='user-rating'>" +
               "<option value='1'" +
               "<option value='2'" +
               "<option value='3'" +
