@@ -14,38 +14,7 @@ $(document).ready(function () {
       $("#users-comments").html("");
       $.each(data, function () {
         $.each(this, function (key, value) {
-          //   $("#users-comments").append("<h4>" + value.title + "</h4>" + "<h5>" + "@" + value.user_name + "</h5>" + "<p>" + value.comment + "</p>" + "<br>" + "<hr>");
-          $("#users-comments").append(
-            "<h4>" +
-              value.title +
-              "</h4>" +
-              "<h5>" +
-              "@" +
-              value.user_name +
-              "</h5>" +
-              "<p>" +
-              value.comment +
-              "</p>" +
-              "<select" +
-              "class='user-rating')" +
-              ">" +
-              "<option value='1'>" +
-              "1" +
-              "<option>" +
-              "<option value='2'>" +
-              "2" +
-              "<option>" +
-              "<option value='3'>" +
-              "3" +
-              "<option>" +
-              "<option value='4'>" +
-              "4" +
-              "<option>" +
-              "<option value='5'>" +
-              "5" +
-              "<option>" +
-              "</select>"
-          );
+          $("#users-comments").append("<h4>" + value.title + "</h4>" + "<h5>" + "@" + value.user_name + "</h5>" + "<p>" + value.comment + "</p>" + "<br>" + "<hr>");
         });
       });
     },

@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(function () {
-    $(".user-rating").barrating({
+    $("#user-rating").barrating({
       theme: "fontawesome-stars",
     });
   });
