@@ -3,7 +3,7 @@ $(document).ready(function () {
     type: "get",
     url: "posts.json",
     beforeSend: function () {
-      $(".#sers-comments").html("Loading...");
+      $("#sers-comments").html("Loading...");
     },
     timeout: 10000,
     error: function (xhr, status, error) {
