@@ -6,10 +6,10 @@ $(document).ready(function () {
     beforeSend: function () {
       $("#new_bulding").html("loading...");
     },
-    timeout: 10000,
-    error: function (xhr, status, error) {
-      alert("Error" + xhr.status);
-    },
+    // timeout: 20000,
+    // error: function (xhr, status, error) {
+    //   alert("Error" + xhr.status + error);
+    // },
     dataType: "json",
     success: function (data) {
       $("#new_building").html("");
