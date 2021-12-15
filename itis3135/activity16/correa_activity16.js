@@ -15,7 +15,7 @@ $(document).ready(function () {
     type: "GET",
     url: "flickr_api",
     beforeSend: function () {
-      $("#new_bulding").html = "loading...";
+      $("#new_bulding").html("loading...");
     },
     timeout: 10000,
     error: function (xhr, status, error) {
@@ -23,7 +23,7 @@ $(document).ready(function () {
     },
     dataType: "json",
     success: function (data) {
-      $("#new_building").html = "";
+      $("#new_building").html("");
       $.each(data.items, function (i, item) {
         $("#new_building").append("<a href='" + item.media.m + "' data-lightbox='new_building'" + "data-title'" + item.title + "' >" + "<img src='" + item.media.m + "'>" + "</a>");
       });
