@@ -7,8 +7,8 @@ $(document).ready(function () {
       $("#new_bulding").html("loading...");
     },
     timeout: 10000,
-    error: function (xhr, status) {
-      alert("Error " + xhr.status);
+    error: function (xhr, status, error) {
+      alert("Error" + xhr.status);
     },
     dataType: "json",
     success: function (data) {
